@@ -6,20 +6,8 @@
 
 /************************************************************/
 /* LAYOUT */
-h2 {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 80px;
-    font-size: 40px;
-    line-height: 40px;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--color-title);
-
-}
 
 /************************************************************/
-
 
 
 /************************************************************/
@@ -40,24 +28,6 @@ h2 {
 
 /************************************************************/
 /* ABOUT ME */
-
-h3{
-    display: inline-block;
-    width: 100%;
-    margin-left: 10px;
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: capitalize;
-    color: #4F4F4F;
-}
-p {
-    display: inline-block;
-    width: 100%;
-    color: var(--color-text);
-    margin-left: 10px;
-    font-size: 15px;
-    line-height: 18px;
-}
 
 /************************************************************/
 
