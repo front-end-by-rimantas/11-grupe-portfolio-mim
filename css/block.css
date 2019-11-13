@@ -1,9 +1,15 @@
 .block {
     display: inline-block;
-    width: calc((100%-90px) / 4);
+    width: calc((100% - 120px) / 4);
     float: left;
     text-align: center;
+    padding: 60px 20px;
+    margin: 15px 15px;
+    box-shadow: 0 4px 8px #0008;
 }
+    /* .block + .block {
+        margin-left: 30px;
+    } */
     .block > i {
         display: inline-block;
         width: 40px;
@@ -19,10 +25,27 @@
     .block > h4 {
         display: inline-block;
         width: 100%;
-    }
-    .block > h4::before {
-        display: inline-block;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
     .block > h4::after {
         display: inline-block;
+        content: '';
+        width: 50px;
+        height: 2px;
+        bottom: -15px;
+        left: 90px;
+        position: absolute;
+        background-color: var();
+        background-color: blue;
+    }
+    .block > p {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 18px;
     }
