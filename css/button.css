@@ -1,6 +1,16 @@
-.btn {
 
+/************************************************************/
+/* header button */
+/************************************************************/
+
+.hero > .btn {
+    padding: 12px 50px;
+    color: #fff;
+    background-color: #393939;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
 }
     .btn:hover {
-        
+    background-color: #000;
     }

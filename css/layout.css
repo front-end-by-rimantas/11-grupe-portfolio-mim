@@ -1,0 +1,12 @@
+.container {
+    display: inline-block;
+    width: 100%;
+}
+
+.container > .content {
+    display: inline-block;
+    width: 1200px;
+    margin: 0 calc(50% - 600px);
+}
+
+    
