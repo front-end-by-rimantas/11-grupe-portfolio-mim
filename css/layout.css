@@ -7,8 +7,11 @@
 .container > .content {
     display: inline-block;
     width: 1200px;
-    margin: 100px calc(50% - 600px);
+    margin: 0px calc(50% - 600px);
    
 }
 
+.container > .about {
+    margin: 100px calc(50% - 600px);
+}
     
