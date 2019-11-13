@@ -1,0 +1,45 @@
+.progress-bar {
+    display: inline-block;
+    width: 80%;
+}
+    .progress-bar > .text {
+        display: inline-block;
+        width: 100%;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        color:  #4f4f4f;
+        font-size: 15px;
+        line-height: 15px;
+    }
+        
+    .progress-bar > .text > .label {
+        display: inline-block;
+        float: left;
+    }
+    .progress-bar > .text > .value {
+        display: inline-block;
+        float: right;
+    }
+.progress-bar > .full {
+    display: inline-block;
+    width: 100%;
+    height: 8px;
+    margin-bottom: 25px;
+    background-color: #cccccc;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+    .progress-bar > .full > .bar {
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        
+    }
+    .progress-bar > .full > .bar > .loading {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #4f4f4f;
+
+    }

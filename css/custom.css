@@ -11,7 +11,6 @@
 h2 {
     display: inline-block;
     width: 100%;
-    margin-top: 80px;
     margin-bottom: 60px;
     font-size: 40px;
     line-height: 40px;
@@ -24,8 +23,8 @@ h2 {
         content: '';
         display: inline-block;
         width: 60px;
-        height: 3px;
-        background-color: black;
+        height: 2px;
+        background-color: #BCBCBC;
         position: absolute;
         bottom: -20px;
         left: calc( 50% - 35px );
@@ -35,9 +34,9 @@ h2 {
         display: inline-block;
         width: 120px;
         height: 2px;
-        background-color: black;
+        background-color: #BCBCBC;
         position: absolute;
-        bottom: -30px;
+        bottom: -24px;
         left: calc( 50% - 65px );
     }
 
@@ -147,28 +146,34 @@ h2 {
 /************************************************************/
 /* ABOUT ME */
 
-.content > .left {
-    display: inline-block;
-    width: 100%;
-    float: left;
-}
-
-    h3{
+    .about > .left {
         display: inline-block;
-        width: 100%;
-        margin-left: 10px;
-        font-size: 30px;
-        line-height: 30px;
-        text-transform: capitalize;
-        color: #4F4F4F;
+        width: 50%;
+        float: left;
+        padding-left: 20px;
     }
-    p {
+
+        .about > .left > h3{
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 25px;
+            font-size: 30px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: #4F4F4F;
+        }
+        .about > .left > p {
+            display: inline-block;
+            width: 100%;
+            color: #76768C;
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    .about > .right {
         display: inline-block;
-        width: 100%;
-        color: #76768C;
-        margin-left: 10px;
-        font-size: 15px;
-        line-height: 18px;
+        width: 40%;
+        float: right;
     }
 
 /************************************************************/
