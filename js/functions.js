@@ -25,10 +25,8 @@ function generateProgress( data ) {
                 </div>`;
     });
     
-
     return HTML;
 }
-
 
 // numbers
 
