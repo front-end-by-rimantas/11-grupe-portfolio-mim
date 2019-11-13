@@ -1,6 +1,7 @@
 .container {
     display: inline-block;
     width: 100%;
+    margin: 10px;
 }
 
 .container > .content {
@@ -9,4 +10,28 @@
     margin: 0 calc(50% - 600px);
 }
 
-    
+@media (max-width: 1300px) {
+    .container > .content {
+        width: 1000px;
+        margin: 0 calc(50% - 500px);
+    }
+}
+@media (max-width: 1100px) {
+    .container > .content {
+        width: 800px;
+        margin: 0 calc(50% - 400px);
+    }
+}
+@media (max-width: 900px) {
+    .container > .content {
+        width: 600px;
+        margin: 0 calc(50% - 300px);
+    }
+}
+@media (max-width: 600px) {
+    .container > .content {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+}
