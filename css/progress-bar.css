@@ -10,6 +10,7 @@
         color:  #4f4f4f;
         font-size: 15px;
         line-height: 15px;
+        font-weight: bolder;
     }
         
     .progress-bar > .text > .label {

@@ -13,3 +13,7 @@
     .about .left > .btn:hover {
     background-color: #000;
     }
+
+.about .left > .btn{
+    padding: 12px 30px;
+}
