@@ -1,0 +1,28 @@
+.block {
+    display: inline-block;
+    width: calc((100%-90px) / 4);
+    float: left;
+    text-align: center;
+}
+    .block > i {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+    }
+        .block > i:hover {
+            
+        }
+    .block > h4 {
+        display: inline-block;
+        width: 100%;
+    }
+    .block > h4::before {
+        display: inline-block;
+    }
+    .block > h4::after {
+        display: inline-block;
+    }

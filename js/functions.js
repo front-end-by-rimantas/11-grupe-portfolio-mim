@@ -17,6 +17,9 @@
 // job history
 
 // services
+function renderBlocks( list );
+let HTML = '';
+let 
 
 // testimonials
 

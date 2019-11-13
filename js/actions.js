@@ -17,6 +17,7 @@
 // job history
 
 // services
+renderBlocks( services );
 
 // testimonials
 
