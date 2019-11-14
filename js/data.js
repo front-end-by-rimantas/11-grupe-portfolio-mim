@@ -7,6 +7,20 @@
 // clients
 
 // about me
+const progress = [
+    {
+        title: 'Design',
+        value: '90'
+    },
+    {
+        title: 'HTML & CSS',
+        value: '85'
+    },
+    {
+        title: 'Wordpress',
+        value: '95'
+    }
+];
 
 // numbers
 

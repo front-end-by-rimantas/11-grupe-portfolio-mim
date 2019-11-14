@@ -8,6 +8,39 @@
 /************************************************************/
 /* LAYOUT */
 
+h2 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #494949;
+    position: relative;
+}
+    h2::before {
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 2px;
+        background-color: #BCBCBC;
+        position: absolute;
+        bottom: -20px;
+        left: calc( 50% - 35px );
+    }
+    h2::after {
+        content: '';
+        display: inline-block;
+        width: 120px;
+        height: 2px;
+        background-color: #BCBCBC;
+        position: absolute;
+        bottom: -24px;
+        left: calc( 50% - 65px );
+    }
+
+
 /************************************************************/
 
 
@@ -111,6 +144,36 @@
 
 /************************************************************/
 /* ABOUT ME */
+
+    .about > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding-left: 20px;
+    }
+
+        .about > .left > h3{
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 25px;
+            font-size: 30px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: #4F4F4F;
+        }
+        .about > .left > p {
+            display: inline-block;
+            width: 100%;
+            color: #76768C;
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    .about > .right {
+        display: inline-block;
+        width: 40%;
+        float: right;
+    }
 
 /************************************************************/
 
