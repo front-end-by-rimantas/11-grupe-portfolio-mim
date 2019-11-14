@@ -8,6 +8,10 @@
 /************************************************************/
 /* LAYOUT */
 
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
 h2 {
     display: inline-block;
     width: 100%;
