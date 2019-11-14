@@ -8,6 +8,8 @@
 
 // about me
 
+document.querySelector('#right-bar').innerHTML = generateProgress(progress);
+
 // numbers
 
 // skills
