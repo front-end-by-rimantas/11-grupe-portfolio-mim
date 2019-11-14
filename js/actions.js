@@ -7,6 +7,7 @@
 // clients
 
 // about me
+
 document.querySelector('#right-bar').innerHTML = generateProgress(progress);
 
 // numbers
@@ -18,6 +19,7 @@ document.querySelector('#right-bar').innerHTML = generateProgress(progress);
 // job history
 
 // services
+renderBlocks( services );
 
 // testimonials
 

@@ -9,26 +9,22 @@
 // about me
 
 function generateProgress( data ) {
-    let HTML = '';
-
-    if ( !Array.isArray(data) ) {
-        return console.error('ERROR: nera saraso..');
-    }
-
-    data.forEach( bar => {
-        HTML += `<div class="progress-bar">
-                        <div class="text">
-                            <div class="title">${bar.title}</div>
-                            <div class="value">${bar.value}%</div>
+   let HTML = '';
+   
+   data.forEach( bar => {
+       HTML += `<div class="progress-bar">
+                    <div class="text">
+                        <div class="title">${bar.title}</div>
+                        <div class="value">${bar.value}</div>
+                    </div>
+                    <div class="full">
+                        <div class="bar" style="width: ${bar.value}%;">
+                            <div class="loading"></div>
                         </div>
-                        <div class="full">
-                            <div class="bar" style="width: ${bar.value}%;">
-                                <div class="loading"></div>
-                            </div>
-                        </div>
-                    </div>`;
-        });
-        
+                    </div>
+                </div>`;
+    });
+    
     return HTML;
 }
 
@@ -41,6 +37,25 @@ function generateProgress( data ) {
 // job history
 
 // services
+function renderBlocks( list ) {
+    let HTML = '';
+
+    for ( let i=0; i<list.length; i++) {
+        const item = list[i];
+    
+    if ( !item.icon ||
+        !item.title ||
+        !item.description ) {
+       continue;
+    }
+    HTML += `<div class="block">
+            <i class="fa fa-${item.icon}"></i>
+            <h4>${item.title}</h4>
+            <p>${item.description}</p>
+            </div>`;
+    }
+    return document.querySelector('#services').innerHTML = HTML;
+}
 
 // testimonials
 

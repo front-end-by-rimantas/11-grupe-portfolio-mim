@@ -1,7 +1,7 @@
 .container {
     display: inline-block;
     width: 100%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .container > .content {
@@ -33,7 +33,7 @@
         margin: 0 calc(50% - 300px);
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .container > .content {
         width: 100%;
         margin: 0;
