@@ -9,26 +9,22 @@
 // about me
 
 function generateProgress( data ) {
-    let HTML = '';
-
-    if ( !Array.isArray(data) ) {
-        return console.error('ERROR: nera saraso..');
-    }
-
-    data.forEach( bar => {
-        HTML += `<div class="progress-bar">
-                        <div class="text">
-                            <div class="title">${bar.title}</div>
-                            <div class="value">${bar.value}%</div>
+   let HTML = '';
+   
+   data.forEach( bar => {
+       HTML += `<div class="progress-bar">
+                    <div class="text">
+                        <div class="title">${bar.title}</div>
+                        <div class="value">${bar.value}</div>
+                    </div>
+                    <div class="full">
+                        <div class="bar" style="width: ${bar.value}%;">
+                            <div class="loading"></div>
                         </div>
-                        <div class="full">
-                            <div class="bar" style="width: ${bar.value}%;">
-                                <div class="loading"></div>
-                            </div>
-                        </div>
-                    </div>`;
-        });
-        
+                    </div>
+                </div>`;
+    });
+    
     return HTML;
 }
 
