@@ -16,95 +16,49 @@
 /* HEADER */
 
 /************************************************************/
-.header-bg {
-    background-color: #F5F5F5;
-}
-.header {
-    display: inline-block;
-    width: 100%;
-}
 
-    .navigation {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 50px;
-        padding: 50px 15px;
-    }
-
-        .links a {
-            color: #777777;
-            text-decoration: none;
-            font-size: 20px;
-            line-height: 40px;
-            padding: 2px 10px;
-            font-size: 16px;
-            text-transform: uppercase;
-            position: relative;
-        }
-
-        .link::after {
-            content: "";
-            position: absolute;
-            height: 2px;
-            left: 0;
-            top: 8px;
-            width: 0;
-            border-bottom: 2px solid gray;
-            transition: all .5s;
-        }
-        .link:hover::after {
-            width: 100%;
-            color: red;
-        }
-
-        .navigation > .links {
-            display: inline-block;
-            float: right;
-        }
-
-        .author {
-            display: inline-block;
-            float: right;
-            margin-right: 15px;
-        }
-        .right {
-            margin-left: 15px;
-        }
-        .logo {
-            height: 40px;
-        }
-
-        .hero {
-            display: inline-block;
-            width: 50%;
-            margin-top: 220px;
-            padding: 0 15px;
-        }
-
-            .hero > h4 {
-                color: #919191;
-                font-size: 16px;
-                margin-bottom: 15px;
-                letter-spacing: 1px;
-            }
-            .hero > h1 {
-                color: #414141;
-                margin-bottom: 15px;
-                font-size: 44px;
-            }
-            .hero > p {
-                color: #6a6a6a;
-                font-size: 20px;
-                margin-bottom: 45px;
-                line-height: 28px;
-            }
-            
 
 /************************************************************/
 /* HERO */
 
 /************************************************************/
+.author {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+}
+.right {
+    margin-left: 15px;
+}
+.logo {
+    height: 40px;
+}
 
+.hero {
+    display: inline-block;
+    width: 50%;
+    margin-top: 220px;
+    padding: 0 15px;
+}
+
+    .hero > h4 {
+        color: #919191;
+        font-size: 16px;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+    }
+    .hero > h1 {
+        color: #414141;
+        margin-bottom: 15px;
+        font-size: 44px;
+    }
+    .hero > p {
+        color: #6a6a6a;
+        font-size: 20px;
+        margin-bottom: 45px;
+        line-height: 28px;
+    }
+    
 /************************************************************/
 /* CLIENTS */
 
@@ -116,9 +70,10 @@
 /************************************************************/
 
 /************************************************************/
-/* NUMBERS */
+/* My experience */
 
 /************************************************************/
+
 
 /************************************************************/
 /* SKILLS */
