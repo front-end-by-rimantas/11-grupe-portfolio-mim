@@ -49,7 +49,34 @@
                 animation-duration: 2s;
                 animation-iteration-count: 1;
             }
+            /* .progress-bar > .full > .bar > .loading::before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: var(--color-title);
+                position: absolute;
+                bottom: -4px;
+                left: 0; 
 
+                animation-name: loading;
+                animation-duration: 2s;
+                animation-iteration-count: 1; 
+            }
+            .progress-bar > .full > .bar > .loading::after {
+                content: '';
+                width: 10px;
+                height: 3px;
+                background-color: var(--color-text);
+                position: absolute;
+                bottom: 20px;
+                left: 100px; 
+
+                animation-name: loading;
+                animation-duration: 2s;
+                animation-iteration-count: 1; 
+            }
+ */
         
 @keyframes loading {
     0% {
