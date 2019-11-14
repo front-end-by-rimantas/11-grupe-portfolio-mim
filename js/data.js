@@ -33,7 +33,7 @@ const progress = [
 // services
 const services = [
     {
-        icon: 'desctop',
+        icon: 'desktop',
         title: 'UI/UX DESIGN',
         description: 'There are many variations of pssages of Lorm available, bu in some form'
     },
@@ -48,7 +48,7 @@ const services = [
         description: 'There are many variations of pssages of Lorm available, bu in some form'
     },
     {
-        icon: 'worldpress',
+        icon: 'wordpress',
         title: 'DEVELOPMENT',
         description: 'There are many variations of pssages of Lorm available, bu in some form'
     }
