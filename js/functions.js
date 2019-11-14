@@ -37,6 +37,25 @@ function generateProgress( data ) {
 // job history
 
 // services
+function renderBlocks( list ) {
+    let HTML = '';
+
+    for ( let i=0; i<list.length; i++) {
+        const item = list[i];
+    
+    if ( !item.icon ||
+        !item.title ||
+        !item.description ) {
+       continue;
+    }
+    HTML += `<div class="block">
+            <i class="fa fa-${item.icon}"></i>
+            <h4>${item.title}</h4>
+            <p>${item.description}</p>
+            </div>`;
+    }
+    return document.querySelector('#services').innerHTML = HTML;
+}
 
 // testimonials
 
