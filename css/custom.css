@@ -244,20 +244,45 @@ h2 {
                 width: calc(100% - 100px);
                 margin-top: 5px;
             }
-            .info > .bottom > .contact + h4 {
+            .info > .bottom > .contact h4 {
                 display: inline-block;
+                width: 100%;
             }
-            .info > .bottom > .contact + span {
+            .info > .bottom > .contact span {
                 display: inline-block;
+                width: 100%;
             }
 
 .form {
     display: inline-block;
-    width: calc((100% - 600px) / 3 * 2);
+    /* width: 100%; */
+    /* width: calc((50% - 600px) / 3 * 2); */
     margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 0;
 }
+    .form > form {
+        display: inline-block;
+        /* text-align: center; */
+        /* width: calc((100% - 600px) / 3 * 2); */
+    }
+    .form > form input {
+        display: inline-block;
+        width: calc(50% - 15px);
+        /* width: (50% - 30px); */
+        margin: 0 15px;
+        /* padding-left: 15px; */
+        float: left;
+        border: none;
+        border-bottom: 1px solid #BCBCBC;
+    }
+    .form > form > textarea {
+        width: 100%;
+        max-height: 148px;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
 
 /************************************************************/
 
