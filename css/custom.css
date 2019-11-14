@@ -209,6 +209,55 @@ h2 {
 
 /************************************************************/
 /* CONTACT ME */
+.content > .info {
+    display: inline-block;
+    width: calc((100%-600px) / 3);
+    margin: 0 15px;
+}
+    .info > .top {
+        display: inline-block;
+        float: left;
+        margin-bottom: 15px;
+    }
+    .info > .bottom {
+        display: inline-block;
+        float: left;
+    }
+        .info > .bottom > .contact {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+        }
+            .info > .bottom > .contact > i {
+                display: inline-block;
+                width: 48px;
+                height: 48px;
+                font-size: 24px;
+                line-height: 45px;
+                text-align: center;
+                border: 1px solid red;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            .info > .bottom > .contact > .credentials {
+                display: inline-block;
+                width: calc(100% - 100px);
+                margin-top: 5px;
+            }
+            .info > .bottom > .contact + h4 {
+                display: inline-block;
+            }
+            .info > .bottom > .contact + span {
+                display: inline-block;
+            }
+
+.form {
+    display: inline-block;
+    width: calc((100% - 600px) / 3 * 2);
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 60px;
+}
 
 /************************************************************/
 
