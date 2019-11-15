@@ -182,8 +182,85 @@ h2 {
 /************************************************************/
 
 /************************************************************/
-/* NUMBERS */
+/* MY EXPERIENCE */
 
+.timeline {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+    .timeline > .line-1,
+    .timeline > .line-2 {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding: 0 15px;
+        position: relative;
+    }
+        .exp {
+            display: inline-block;
+            width: 100%;
+        }
+        .exp:nth-child(1) {
+            margin-bottom: 40px;
+        }
+        
+        .time > .dashed {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: 165px;
+            width: 0px;
+            height: 120px;
+            border-left: 2px dashed var(--color-text-light); 
+        }
+        .time > p,
+        .experience > p {
+            font-size: 15px;
+            line-height: 22px;
+            color: var(--color-text-light);
+            margin: 15px 0;
+        }
+    
+        .time {
+            display: inline-block;
+            width: 30%;
+            float: left;
+            color: var(--color-text-light);
+        }
+            .time > h4 {
+                display: inline-block;
+                width: 100%;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 400; 
+            }
+            .time > p {
+                margin: 0;
+            }
+        .exp > i {
+            display: inline-block;
+            float: left;
+            position: relative;
+            font-size: 24px;
+            color: var(--color-text);
+        }
+            .experience {
+                display: inline-block;
+                width: 70%;
+                float: right;
+                padding-left: 40px;
+                position: relative;
+            }
+                .experience > h3 {
+                    display: block;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: var(--color-text);
+                    position: absolute;
+                    top: -22px;
+                }
+                
 /************************************************************/
 
 /************************************************************/
