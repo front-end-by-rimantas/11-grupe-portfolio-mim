@@ -31,6 +31,28 @@ const progress = [
 // job history
 
 // services
+const services = [
+    {
+        icon: 'desktop',
+        title: 'UI/UX DESIGN',
+        description: 'There are many variations of pssages of Lorm available, bu in some form'
+    },
+    {
+        icon: 'heart-o',
+        title: 'WEB DESIGN',
+        description: 'There are many variations of pssages of Lorm available, bu in some form'
+    },
+    {
+        icon: 'crosshairs',
+        title: 'MINIMAL DESIGN',
+        description: 'There are many variations of pssages of Lorm available, bu in some form'
+    },
+    {
+        icon: 'wordpress',
+        title: 'DEVELOPMENT',
+        description: 'There are many variations of pssages of Lorm available, bu in some form'
+    }
+]
 
 // testimonials
 

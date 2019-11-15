@@ -7,7 +7,7 @@
         width: 100%;
         text-transform: uppercase;
         margin-bottom: 15px;
-        color: var(--color-text);
+        color:  #4f4f4f;
         font-size: 15px;
         line-height: 15px;
         font-weight: bolder;
@@ -26,8 +26,9 @@
         width: 100%;
         height: 8px;
         margin-bottom: 25px;
-        background-color: var(--color-text-anti);
+        background-color: #cccccc;
         border-radius: 3px;
+        overflow: hidden;
 
     }
     
@@ -35,49 +36,19 @@
             display: inline-block;
             width: 90%;
             height: 100%;
-            position: relative;
         }
 
             .progress-bar > .full > .bar > .loading {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
-                border-radius: 3px;
-                background-color: var(--color-title);
+                background-color: #4f4f4f;
 
                 animation-name: loading;
                 animation-duration: 2s;
                 animation-iteration-count: 1;
             }
-            /* .progress-bar > .full > .bar > .loading::before {
-                content: '';
-                width: 16px;
-                height: 16px;
-                border-radius: 50%;
-                background-color: var(--color-title);
-                position: absolute;
-                bottom: -4px;
-                left: 0; 
 
-                animation-name: loading;
-                animation-duration: 2s;
-                animation-iteration-count: 1; 
-            }
-            .progress-bar > .full > .bar > .loading::after {
-                content: '';
-                width: 10px;
-                height: 3px;
-                background-color: var(--color-text);
-                position: absolute;
-                bottom: 20px;
-                left: 100px; 
-
-                animation-name: loading;
-                animation-duration: 2s;
-                animation-iteration-count: 1; 
-            }
- */
-        
 @keyframes loading {
     0% {
         width: 0%;
