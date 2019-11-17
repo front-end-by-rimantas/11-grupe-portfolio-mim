@@ -3,10 +3,23 @@
     width: calc((100% - 120px) / 4);
     float: left;
     text-align: center;
-    padding: 60px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 60px;
     margin: 15px 15px;
-    box-shadow: 0 4px 8px var(--color-primary);
+    box-shadow: 0 1px 2px 2px #E5E5E5;
+    background-color: var(--color-primary);
 }
+    .block:hover {
+        box-shadow: 0 3px 20px 2px #E5E5E5;
+        transition: all .3s ease 0s;
+    }
+    .block:hover i {
+        background-color: var(--color-title);
+        color: #fff;
+        transition: all .3s ease 0s;
+    }
     .block > i {
         display: inline-block;
         width: 40px;
@@ -16,9 +29,6 @@
         border: 1px solid var(--color-text);
         border-radius: 50%;
     }
-        .block > i:hover {
-            
-        }
     .block > h4 {
         display: inline-block;
         width: 100%;

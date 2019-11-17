@@ -1,3 +1,7 @@
+.primary {
+    background-color: var(--color-primary);
+}
+
 .container {
     display: inline-block;
     width: 100%;
