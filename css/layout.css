@@ -26,6 +26,10 @@
         width: 800px;
         margin: 80px calc(50% - 400px);
     }
+   #dashed {
+       height: 135px;
+
+   }
 }
 @media (max-width: 900px) {
     .container > .content {
@@ -37,6 +41,16 @@
         width: 100%;
         padding: 20px 0;
     }
+    .content > .timeline > .line-1,
+    .content > .timeline > .line-2 {
+        width: 100%;   
+    }
+    .line-1 + .line-2 {
+        margin-top: 50px;
+    }
+    #dashed {
+        height: 20vh;
+    }
 }
 @media (max-width: 650px) {
     .container > .content {
@@ -45,4 +59,8 @@
         padding: 0 20px;
     }
 }
-
+@media (max-width: 500px) {
+    #dashed {
+        height: 120px;
+    }
+}
