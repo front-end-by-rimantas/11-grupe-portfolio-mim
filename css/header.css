@@ -1,6 +1,5 @@
 .bg-primary {
     background-color: var(--color-primary);
-    /* overflow: hidden; */
 }
 .header {
     display: inline-block;
@@ -20,7 +19,9 @@
             padding: 0 10px;
             font-size: 16px;
             position: relative;
-            color: var(--color-text);
+            text-transform: uppercase;
+            font-family: Montserrat;
+            color: #777;
         }
 
         .links > a::after {
@@ -30,7 +31,7 @@
             left: 0;
             top: 5px;
             width: 0;
-            border-bottom: 2px solid var(--color-text);
+            border-bottom: 2px solid #777;
             transition: all .5s;
         }
         .links > a:hover::after {
