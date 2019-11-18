@@ -46,35 +46,7 @@
                 animation-iteration-count: 1;
                 position: relative;
             }
-            .progress-bar > .full > .bar > .loading::after {
-                content: '';
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-                background-color: #4f4f4f;
-                position: absolute;
-                top: -5px;
-                right: 0;  
-
-                animation-name: loading-circle;
-                animation-duration: 2s;
-                animation-iteration-count: 1;
-            }
-            .progress-bar > .full > .bar > .loading::before {
-                content: '';
-                width: 28px;
-                height: 28px;
-                border-radius: 50%;
-                background-color: rgb(79, 79, 79, 0.4) ;
-                position: absolute;
-                top: -10px;
-                right: -5px;  
-
-                animation-name: loading-circle-2;
-                animation-duration: 2s;
-                animation-iteration-count: 1;
-            }
-                
+            
 
 @keyframes loading {
     0% {
@@ -82,21 +54,5 @@
     } 
     100% {
         width: 100%;
-    } 
-}
-@keyframes loading-circle {
-    0% {
-        width: 18px;
-    } 
-    100% {
-        width: 18px;
-    } 
-}
-@keyframes loading-circle-2 {
-    0% {
-        width: 28px;
-    } 
-    100% {
-        width: 28px;
     } 
 }
