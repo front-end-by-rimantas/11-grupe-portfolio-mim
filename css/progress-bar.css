@@ -28,33 +28,31 @@
         margin-bottom: 25px;
         background-color: #cccccc;
         border-radius: 3px;
-        overflow: hidden;
-
     }
-    
         .progress-bar > .full > .bar {
             display: inline-block;
             width: 90%;
             height: 100%;
         }
-
             .progress-bar > .full > .bar > .loading {
                 display: inline-block;
                 width: 100%;
                 height: 100%;
                 background-color: #4f4f4f;
-
+                border-radius: 3px;
+                
                 animation-name: loading;
                 animation-duration: 2s;
                 animation-iteration-count: 1;
+                position: relative;
             }
-   
+            
 
 @keyframes loading {
     0% {
         width: 0%;
-    }
+    } 
     100% {
         width: 100%;
-    }
+    } 
 }
