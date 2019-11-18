@@ -8,8 +8,40 @@
 /************************************************************/
 /* LAYOUT */
 
-/************************************************************/
+h2 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 60px;
+    font-size: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #494949;
+    position: relative;
+}
+    h2::before {
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 2px;
+        background-color: #BCBCBC;
+        position: absolute;
+        bottom: -20px;
+        left: calc( 50% - 35px );
+    }
+    h2::after {
+        content: '';
+        display: inline-block;
+        width: 120px;
+        height: 2px;
+        background-color: #BCBCBC;
+        position: absolute;
+        bottom: -24px;
+        left: calc( 50% - 65px );
+    }
 
+
+/************************************************************/
 
 
 /************************************************************/
@@ -67,11 +99,119 @@
 /************************************************************/
 /* ABOUT ME */
 
+    .about > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding-left: 15px;
+    }
+
+        .about > .left > h3{
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 25px;
+            font-size: 30px;
+            line-height: 30px;
+            text-transform: capitalize;
+            color: #4F4F4F;
+        }
+        .about > .left > p {
+            display: inline-block;
+            width: 100%;
+            color: #76768C;
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    .about > .right {
+        display: inline-block;
+        width: 45%;
+        float: right;
+    }
+
 /************************************************************/
 
 /************************************************************/
-/* My experience */
 
+/* MY EXPERIENCE */
+
+.timeline {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+    .timeline > .line-1,
+    .timeline > .line-2 {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding: 0 15px;
+        position: relative;
+    }
+        .exp {
+            display: inline-block;
+            width: 100%;
+        }
+        .exp:nth-child(1) {
+            margin-bottom: 40px;
+        }
+        
+        .time > .dashed {
+            content: '';
+            position: absolute;
+            top: 24px;
+            left: calc( 100% - 70% + 15px );
+            width: 0px;
+            height: 20vh;
+            border-left: 2px dashed #939393; 
+        }
+        .time > p,
+        .experience > p {
+            font-size: 15px;
+            line-height: 22px;
+            color: #939393;
+            margin: 15px 0;
+        }
+    
+        .time {
+            display: inline-block;
+            width: 30%;
+            float: left;
+            color: #939393;
+        }
+            .time > h4 {
+                display: inline-block;
+                width: 100%;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 400; 
+            }
+            .time > p {
+                margin: 0;
+            }
+        .exp > i {
+            display: inline-block;
+            float: left;
+            position: relative;
+            font-size: 24px;
+            color: var(--color-text);
+        }
+            .experience {
+                display: inline-block;
+                width: 70%;
+                float: right;
+                padding-left: 40px;
+                position: relative;
+            }
+                .experience > h3 {
+                    display: block;
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: var(--color-text);
+                    position: absolute;
+                    top: -22px;
+                }
+                
 /************************************************************/
 
 
@@ -99,6 +239,138 @@
 /* TESTIMONIALS */
 
 /************************************************************/
+
+/************************************************************/
+/* My blog */
+
+/************************************************************/
+
+
+
+.blog > .block {
+    display: inline-block;
+    width: calc((94%) / 3);
+    float: left;
+    min-height: 320px;
+    margin: 1%;
+    box-shadow: 1px 1px 3px 1px var(--color-text);
+    margin-top: 60px;
+    transition: all .4s;
+}
+
+    .blog > .block:hover {
+        background-color: #fff;
+    }
+
+    .blog > .block:hover #plus {
+        background-color: black;
+        color: #fff;
+    }
+
+    .blog1Img {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .blog p {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        padding: 20px 20px;
+        font-size: 14px;
+        border-bottom: 1px solid #c3c3c3;
+        color: var(--color-text);
+    }
+
+        .blog p > span {
+            float: right;
+        }
+
+    .blog p::before {
+       content: " ";
+       display: inline-block;
+       background: url(../img/calendar.svg) no-repeat;
+       width: 14px;
+       height: 14px;
+       margin: 0 0 -3px 0;
+    }
+
+    .blog p > span::before {
+        content: " ";
+        display: inline-block;
+        background: url(../img/comment.svg) no-repeat;
+        width: 14px;
+        height: 14px;
+        margin: 0 5px -3px 10px;
+     }
+  
+    .link {
+        display: inline-block;
+        width: 100%;
+        padding: 26px 20px;
+    }
+
+    .link a {
+        display: inline;
+        width: 100%;
+        line-height: 33px;
+        font-size: 18px;
+        color: var(--color-text);
+        text-decoration: none;
+    }
+
+    #plus {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 33px;
+        display: inline-block;
+        text-decoration: none;
+        color: var(--color-text);
+        background-color: #fff;
+        float: right;
+        transition: all 0.6s;
+        font-size: 18px;
+    }
+
+    #plus:hover {
+        background-color: black;
+        transform: scale(1.1);
+        color: #fff;
+        font-size: 20px;
+    }
+
+
+
+.blog > h1 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.blog h1::after {
+    content: " ";
+    display: block ;
+    border-bottom: 3px solid gray;
+    width: 40px;
+    position: absolute;
+    bottom: 12px;
+    left: calc((100% - 40px) / 2);
+}
+
+.blog h1::before {
+    content: " ";
+    display: block ;
+    border-bottom: 2px solid gray;
+    width: 80px;
+    position: absolute;
+    bottom: 6px;
+    left: calc((100% - 80px) / 2);
+}
 
 /************************************************************/
 /* CONTACT ME */

@@ -20,6 +20,8 @@ close.addEventListener('click', ()=>{
 
 // about me
 
+document.querySelector('#right-bar').innerHTML = generateProgress(progress);
+
 // numbers
 
 // skills
@@ -29,6 +31,7 @@ close.addEventListener('click', ()=>{
 // job history
 
 // services
+renderBlocks( services );
 
 // testimonials
 

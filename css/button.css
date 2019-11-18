@@ -1,16 +1,19 @@
-
-/************************************************************/
-/* header button */
-/************************************************************/
-
-.hero > .btn {
+.hero > .btn,
+.about .left > .btn {
+    display: inline-block;
     padding: 12px 50px;
     color: #fff;
-    background-color: #393939;
+    background-color: var(--color-button);
     text-decoration: none;
+    text-transform: uppercase;
     border-radius: 6px;
     font-weight: 600;
 }
-    .btn:hover {
+    .btn:hover,
+    .about .left > .btn:hover {
     background-color: #000;
     }
+
+.about .left > .btn{
+    padding: 12px 30px;
+}
