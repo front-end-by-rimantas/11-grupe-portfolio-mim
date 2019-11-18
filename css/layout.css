@@ -5,43 +5,67 @@
 .container {
     display: inline-block;
     width: 100%;
-    /* margin: 10px; */
+    padding: 40px 0;
 }
 
 .container > .content {
     display: inline-block;
     width: 1200px;
+    margin: 100px calc(50% - 600px);
+}
+
+.container > .content-header {
     margin: 0px calc(50% - 600px);
 }
 
-.container > .about {
-    margin: 100px calc(50% - 600px);
-}
     
 
 @media (max-width: 1300px) {
     .container > .content {
         width: 1000px;
-        margin: 0 calc(50% - 500px);
+        margin: 90px calc(50% - 500px);
     }
 }
 @media (max-width: 1100px) {
     .container > .content {
         width: 800px;
-        margin: 0 calc(50% - 400px);
+        margin: 80px calc(50% - 400px);
     }
+   #dashed {
+       height: 135px;
+
+   }
 }
 @media (max-width: 900px) {
     .container > .content {
         width: 600px;
-        margin: 0 calc(50% - 300px);
+        margin: 50px calc(50% - 300px);
+    }
+    .content.about > .left,
+    .content.about > .right {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .content > .timeline > .line-1,
+    .content > .timeline > .line-2 {
+        width: 100%;   
+    }
+    .line-1 + .line-2 {
+        margin-top: 50px;
+    }
+    #dashed {
+        height: 20vh;
     }
 }
 @media (max-width: 650px) {
     .container > .content {
         width: 100%;
-        margin: 0;
+        margin: 20px 0;
         padding: 0 20px;
     }
 }
-
+@media (max-width: 500px) {
+    #dashed {
+        height: 120px;
+    }
+}
