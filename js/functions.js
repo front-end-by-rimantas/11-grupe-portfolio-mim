@@ -15,7 +15,7 @@ function generateProgress( data ) {
        HTML += `<div class="progress-bar">
                     <div class="text">
                         <div class="title">${bar.title}</div>
-                        <div class="value">${bar.value}</div>
+                        <div class="value">${bar.value}%</div>
                     </div>
                     <div class="full">
                         <div class="bar" style="width: ${bar.value}%;">
@@ -34,7 +34,38 @@ function generateProgress( data ) {
 
 // latest work
 
-// job history
+// portfolio
+function renderGallery( list ) {
+    const DOM = document.querySelector('#gallery');
+    let HTML = '';
+    let filterHTML = 'Gallery filter';
+    let listHTML = '';
+
+    // gallety  be tag'u
+    for ( let i=0; i<list.length; i++ ) {
+        const work = list[i];
+
+        listHTML += `<div class="work">
+                        <img src="./img/work/${work.photo}">
+                        <div class="ant">
+                            <a href="#" class="btn-round fa fa-link"></a>
+                            <a href="#">${work.name}</a>
+                            <p>${work.description}</p>
+                        </div>
+                    </div>`;
+    }
+    HTML = `<div class="gallery">
+                <div class="filter">
+                    ${filterHTML}
+                </div>
+                <div class="list">
+                    ${listHTML}
+                </div>
+            </div>`;
+
+    return DOM.innerHTML = HTML;
+}
+
 
 // services
 function renderBlocks( list ) {
@@ -60,6 +91,4 @@ function renderBlocks( list ) {
 // testimonials
 
 // contact me
-
-// footer
 
