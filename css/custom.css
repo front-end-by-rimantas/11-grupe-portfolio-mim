@@ -216,7 +216,7 @@ h2 {
 
 .blog > .blocks {
     display: inline-block;
-    width: 30%;
+    width: calc((94%) / 3);
     float: left;
     min-height: 320px;
     margin: 1%;
