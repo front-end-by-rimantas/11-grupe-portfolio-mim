@@ -254,7 +254,7 @@ h2::before {
     display: inline-block;
     width: calc((94%) / 3);
     float: left;
-    min-height: 320px;
+    min-height: 220px;
     margin: 1%;
     box-shadow: 1px 1px 3px 1px var(--color-text);
     margin-top: 60px;
@@ -318,6 +318,13 @@ h2::before {
         font-size: 18px;
         color: var(--color-text);
         text-decoration: none;
+        margin: 20px 10px;
+    }
+
+   .blocks > .link {
+        /* line-height: 80px; */
+        /* padding: 60px 10px ; */
+        /* background: red; */
     }
 
     #plus {
