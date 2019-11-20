@@ -261,7 +261,7 @@ h2::before {
     transition: all .4s;
     text-align: left;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 
     .blog > .blocks:hover {
