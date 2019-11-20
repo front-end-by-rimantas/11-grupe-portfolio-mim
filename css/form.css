@@ -177,6 +177,5 @@
     .content > .touch > .filling > form > .btn {
         width: 190px;
         margin: 30px calc((100% - 190px) / 2 ) 0;
-        /* padding: 0 40px; */
     }
 }
