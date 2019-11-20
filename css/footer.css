@@ -45,3 +45,9 @@
         margin: 20px calc(50% - 300px);
     }
 }
+@media (max-width: 650px) {
+    .container > .footer-content {
+        width: 400px;
+        margin: 20px calc(50% - 200px);
+    }
+}

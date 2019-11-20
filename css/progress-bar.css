@@ -1,6 +1,6 @@
 .progress-bar {
     display: inline-block;
-    width: 80%;
+    width: 80%;  
 }
     .progress-bar > .text {
         display: inline-block;
@@ -99,3 +99,19 @@
     } 
 }
 
+
+
+@media (max-width: 900px) {
+    .content.about > .left,
+    .content.about > .right {
+        width: 100%;
+        padding: 0;
+    }
+    .content.about > .left {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+        .about .right >.progress-bar {
+            width: 100%;
+        }
+}

@@ -28,7 +28,8 @@ document.querySelector('#right-bar').innerHTML = generateProgress(progress);
 
 // latest work
 
-// job history
+// portfolio
+renderGallery( works );
 
 // services
 renderBlocks( services );
