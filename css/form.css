@@ -1,0 +1,181 @@
+.content > .left-side {
+    display: inline-block;
+}
+    .content > .left-side h2 {
+        text-align: left;
+    }
+        .left-side h2::before {
+            position: absolute;
+            height: 3px;
+            bottom: -20px;
+            left: 0;
+        }
+        .left-side h2::after {
+            position: absolute;
+            height: 3px;
+            bottom: -26px;
+            left: 0;
+        }
+
+.content > .info {
+    display: inline-block;
+    width: calc(100% / 3);
+    padding: 0 15px;
+    float: left;
+}
+    .info > .top {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+        .info > .top > p {
+            color: var(--color-text);
+            font-size: 18px;
+            line-height: 20px;
+        }
+    .info > .bottom {
+        display: inline-block;
+    }
+        .info > .bottom > .contact {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0;
+        }
+            .info > .bottom > .contact > i {
+                display: inline-block;
+                width: 47px;
+                height: 47px;
+                font-size: 24px;
+                line-height: 47px;
+                text-align: center;
+                margin-right: 10px;
+                border-radius: 50%;
+                border: 1px solid var(--color-text);
+                color: var(--color-text);
+            }
+            .info > .bottom > .contact > .credentials {
+                display: inline-block;
+                width: calc(100% - 100px);
+                margin-top: 5px;
+            }
+            .info > .bottom > .contact h4 {
+                display: inline-block;
+                width: 100%;
+                color: var(--color-text);
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: normal;
+            }
+            .info > .bottom > .contact span {
+                display: inline-block;
+                width: 100%;
+                color: var(--color-text);
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+    .touch {
+        display: inline-block;
+        width: calc(100%  / 3 * 2);
+        padding: 0 15px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+        .filling {
+            display: inline-block;
+            width: 100%;
+        }
+            .filling > form {
+                display: inline-block;
+                width: 70%;
+                margin: 40px calc((100% - 70%) / 2) 0;
+            }
+            .filling > form > .input_here {
+                display: inline-block;
+                width: 100%;
+            }
+            .filling > form > .input_here input {
+                display: inline-block;
+                width: calc((100% - 30px) / 2);
+                font-size: 24px;
+                line-height: 26px;
+                padding: 5px 0;
+                box-sizing: border-box;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid #BCBCBC;
+                float: left;
+            }
+                .filling > form > .input_here input::placeholder {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            .filling > form > .input_here > input:nth-of-type(1) {
+                margin-right: 15px;
+            }
+            .filling > form > .input_here > input:nth-of-type(2) {
+                margin-left: 15px;
+            }
+            .filling > form > textarea {
+                display: inline-block;
+                width: 100%;
+                height: 148px;
+                padding: 10px 20px;
+                margin-top: 50px;
+                line-height: 26px;
+                padding: 10px 20px;
+                outline: none;
+                resize: none;
+            }
+                .filling > form > textarea::placeholder {
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            .filling > form > .btn {
+                display: inline-block;
+                margin: 0;
+                margin-top: 30px;
+                float: left;
+            }
+
+@media (max-width: 1300px) {
+    .content > .touch > .filling > form {
+        width: 80%;
+        margin: 40px calc((100% - 80%) / 2) 0;
+    }
+}
+@media (max-width: 1100px) {
+    .content > .info {
+        width: 50%;
+    }
+    .content > .touch {
+        width: 50%;
+    }
+    .content > .touch > .filling > form {
+        width: 100%;
+        margin: 40px 0 0;
+    }
+}
+@media (max-width: 900px) {
+    .content > .info {
+        width: 100%;
+    }
+    .content > .touch {
+        width: 100%;
+    }
+    .content > .touch > .filling > form > .input_here input {
+        width: 100%;
+        margin: 0;
+    }
+    .content > .touch > .filling > form > .input_here > input:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    .filling > form > textarea {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 650px) {
+    .content > .touch > .filling > form > .btn {
+        width: 190px;
+        margin: 30px calc((100% - 190px) / 2 ) 0;
+    }
+}

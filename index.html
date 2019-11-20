@@ -10,35 +10,50 @@
 </head>
 <body>
     <!-- header start -->
-    <div class="container header-bg">
+    <div class="container bg-primary">
         <div class="content header">
             <div class="navigation">
                 <img src="./img/logo.png" class="logo" alt="logo image">
                 <div class="links">
-                    <a href="#" class="link">Home</a>
+                    <a href="#">Home</a>
                     <a href="#">About</a>
                     <a href="#">Portfolio</a>
                     <a href="#">Services</a>
                     <a href="#">Blog</a>
                     <a href="#">Contact</a>
-                    <a href="#">Hamburger</a>
+                    <i class="fa fa-bars"></i>
+                    <div id="menuToggle">
+                        <ul class="menu">
+                            <i class="fa fa-times"></i>
+                            <img src="./img/light-logo.png" class="menuimg" alt="logo image">
+                            <a href="">HOME</a>
+                            <a href="">ABOUT</a>
+                            <a href="">PORTFOLIO</a>
+                            <a href="">SERVICES</a>
+                            <a href="">BLOG</a>
+                            <a href="">CONTACT</a>
+                            <a href="">UPDATE & NOTICE <span id="menuSpan">Update Notice!</span></a>
+                            <a href="">PRICING & TIMELINE</a>
+                            <a href="">PORTFOLIO DETAILS<span id="menuSpan">New Updated!</span></a>
+                            <a href="">Pricing & Timeline (Dark Version)</a>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="hero">
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- hero start -->
+    <div class="container bg-primary">
+        <div class="content hero">
+            <div class="left">
                 <h4>HELLO, MY NAME IS</h4>
                 <h1>ANDREW JORDAN</h1>
                 <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demord by</p>
                 <a href="#portfolio" class="btn">MY WORK</a>
             </div>
             <img src="./img/author.png" class="author" alt="author image">
-        </div>
-    </div>
-    <!-- header end -->
-
-    <!-- hero start -->
-    <div class="container">
-        <div class="content">
-            hero content
         </div>
     </div>
     <!-- hero end -->
@@ -57,30 +72,87 @@
                 Progress bar
             </div>
         <div class="content">
-            about me
         </div>
     </div>
-    
     <!-- about me end -->
 
     <!-- My experience start -->
-    <div class="container">
+    <div class="container bg-primary">
         <div class="content">
-            my experience
+            <h2>My experience</h2>
+            <div class="timeline">
+                <div class="line-1">
+                    <div class="exp">
+                        <div class="time">
+                            <div class="dashed" id="dashed"></div>
+                            <h4>Behance</h4>
+                            <p>2007-2008</p>
+                        </div> 
+                        <i class="fa fa-check-circle"::before></i>
+                        <div class="experience">
+                            <h3>Graphic Designer</h3>
+                            <p>There are many variations of passages of Lorem
+                            Ipsum available, but the majority</p>
+                        </div>     
+                    </div>
+                    <div class="exp">
+                        <div class="time">
+                            <h4>RegalTheme</h4>
+                            <p>2008-2010</p>
+                        </div>
+                        <i class="fa fa-check-circle"::before></i>
+                        <div class="experience">
+                            <h3>Web Designer & Developer</h3>
+                            <p>There are many variations of passages of Lorem
+                            Ipsum available, but the majority</p>
+                        </div>      
+                    </div>
+                </div>
+                <div class="line-2">
+                    <div class="exp">
+                        <div class="time">
+                            <div class="dashed" id="dashed"></div>
+                            <h4>Wipux</h4>
+                            <p>2010-2014</p>
+                        </div> 
+                        <i class="fa fa-check-circle"::before></i>
+                        <div class="experience">
+                            <h3>Web & print designer</h3>
+                            <p>There are many variations of passages of Lorem
+                            Ipsum available, but the majority</p>
+                        </div>     
+                    </div>
+                    <div class="exp">
+                        <div class="time">
+                            <h4>ThemeForest</h4>
+                            <p>2014-2017</p>
+                        </div>
+                        <i class="fa fa-check-circle"::before></i>
+                        <div class="experience">
+                            <h3>Programmer & developer</h3>
+                            <p>There are many variations of passages of Lorem
+                            Ipsum available, but the majority</p>
+                        </div>      
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- My experience end -->
 
     <!-- portfolio start -->
-    <div class="container">
+    <div class="container" id="portfolio">
         <div class="content">
-            portfolio
+            <h2>My portfolio</h2>
+        </div>
+        <div class="gallery" id="gallery">
+        
         </div>
     </div>
     <!-- portfolio start -->
 
     <!-- my services start -->
-    <div class="container">
+    <div class="container bg-primary">
         <div class="content">
             <h2>My services</h2>
             <div id="services"></div>
@@ -131,15 +203,63 @@
     <!-- Get in touch start -->
     <div class="container">
         <div class="content">
-            Get in touch
+            <div class="info left-side">
+                <div class="top">   
+                    <h2>Get in touch</h2>
+                    <p>There are many variations of pssges of Lorem Ipsum available, bu in some form, by</p>
+                </div>
+                <div class="bottom">
+                    <div class="contact">
+                        <i class="fa fa-phone"></i>
+                        <div class="credentials">
+                            <h4>Phone</h4>
+                            <span>+88 669 658 6586</span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa fa-envelope-o"></i>
+                        <div class="credentials">
+                            <h4>Email</h4>
+                            <span>email@domain.com</span>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <i class="fa fa-university"></i>
+                        <div class="credentials">
+                            <h4>Location</h4>
+                            <span>Location Name,Here.US</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="touch">
+                <div class="filling">
+                    <form>
+                        <div class="input_here">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <textarea name="" id="" placeholder="Your Message"></textarea>
+                        <div class="btn">Send message</div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Get in touch end -->
 
     <!-- footer start -->
-    <div class="container">
-        <div class="content">
-            footer
+    <div class="container bg-primary">
+        <div class="footer-content">
+            <div class="foot-left">
+                <span>Copyright &copy; 2019 Regaltheme</span>
+            </div>
+            <div class="foot-right">
+                <a href="#" target="_blank">facebook</a>
+                <a href="#" target="_blank">twitter</a>
+                <a href="#" target="_blank">linkedin</a>
+                <a href="#" target="_blank">email</a>
+            </div>
         </div>
     </div>
     <!-- footer end -->

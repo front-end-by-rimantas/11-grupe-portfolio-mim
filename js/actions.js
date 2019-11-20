@@ -2,6 +2,18 @@
 
 // header
 
+const ul = document.querySelector('ul');
+const hamburger = document.querySelector('.fa-bars');
+const close = document.querySelector('.fa-times');
+
+hamburger.addEventListener('click', ()=>{
+    ul.classList.add('menu-show');
+});
+
+close.addEventListener('click', ()=>{
+    ul.classList.remove('menu-show');
+});
+
 // hero
 
 // clients
@@ -16,7 +28,8 @@ document.querySelector('#right-bar').innerHTML = generateProgress(progress);
 
 // latest work
 
-// job history
+// portfolio
+renderGallery( works );
 
 // services
 renderBlocks( services );
