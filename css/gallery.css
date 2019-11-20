@@ -14,7 +14,7 @@
         .gallery > .list > .work {
             display: inline-block;
             width: calc((100% - 60px) / 3);
-            height: 200px;
+            height: 450px;
             float: left;
             margin: 0 0 30px 30px;
             overflow: hidden;
@@ -41,26 +41,46 @@
                 color: var(--color-text);
                 
             }
-                .gallery .work:hover > .ant {
-                    display: inline-block;
-                    
-                }
-                .gallery .ant > a {
-                    display: inline-block;
-                    width: 100%;
-                    font-size: 25px;
-                    line-height: 30px;
-                    font-weight: 300;
-                    text-decoration: none;
-                    color: var(--color-text);
-                }
+            .gallery .work:hover > .ant {
+                display: inline-block;
                 
-                .gallery .ant > a:hover {
-                    color: black;
+            }
+                .gallery .ant > .btn-round {
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 25px;
+                    line-height: 60px;
+                    text-align: center;
+                    vertical-align: middle;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-color: #bcbcbc;
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
-                .gallery .ant > p {
+                .gallery .ant > .portfolio-title {
                     display: inline-block;
                     width: 100%;
-                    font-size: 18px;
-                    line-height: 20px;
+                    position: absolute;
+                    left: 10%;
+                    bottom: 20%;
                 }
+                    .portfolio-title > .a-link {
+                        font-size: 25px;
+                        line-height: 30px;
+                        font-weight: 300;
+                        color: var(--color-text);
+                        text-decoration: none;
+                    }
+                    .portfolio-title > .a-link:hover {
+                        color: black;
+                    }
+                    .portfolio-title > p {
+                        font-size: 18px;
+                        line-height: 20px;
+                        padding-top: 5px;
+                    }

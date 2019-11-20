@@ -49,8 +49,10 @@ function renderGallery( list ) {
                         <img src="./img/work/${work.photo}">
                         <div class="ant">
                             <a href="#" class="btn-round fa fa-link"></a>
-                            <a href="#">${work.name}</a>
-                            <p>${work.description}</p>
+                            <div class="portfolio-title">
+                                <a href="#" class="a-link">${work.name}</a>
+                                <p>${work.description}</p>
+                            </div>
                         </div>
                     </div>`;
     }
