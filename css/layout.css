@@ -1,3 +1,7 @@
+.primary {
+    background-color: var(--color-primary);
+}
+
 .container {
     display: inline-block;
     width: 100%;
@@ -26,10 +30,7 @@
         width: 800px;
         margin: 80px calc(50% - 400px);
     }
-   #dashed {
-       height: 135px;
-
-   }
+   
 }
 @media (max-width: 900px) {
     .container > .content {
@@ -48,9 +49,7 @@
     .line-1 + .line-2 {
         margin-top: 50px;
     }
-    #dashed {
-        height: 20vh;
-    }
+    
 }
 @media (max-width: 650px) {
     .container > .content {
@@ -59,8 +58,14 @@
         padding: 0 20px;
     }
 }
-@media (max-width: 500px) {
-    #dashed {
+
+/************************************************************/
+/* My blog */
+
+/************************************************************/
+
+@media (max-width: 1300px) {
+      .blocks > .link {
         height: 120px;
     }
 }
@@ -138,5 +143,16 @@
     .container > .header {
         width: 400px;
         margin: 0 calc(50% - 200px);
+    }
+}
+=======
+@media (max-width: 900px) {
+     .container > .blog > .blocks {
+       width: 80%;
+       margin: 20px calc((100% - 80%) / 2);
+    }
+
+    .blocks > .link {
+        height: initial;
     }
 }
