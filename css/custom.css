@@ -254,7 +254,7 @@ h2::before {
     display: inline-block;
     width: calc((94%) / 3);
     float: left;
-    min-height: 220px;
+    min-height: 320px;
     margin: 1%;
     box-shadow: 1px 1px 3px 1px var(--color-text);
     margin-top: 60px;
@@ -268,9 +268,11 @@ h2::before {
         background-color: #fff;
     }
 
-    .blog > .blocks:hover #plus {
+    #plus:hover {
         background-color: black;
         color: #fff;
+        transform: scale(1.1);
+        font-size: 20px;
     }
 
     .blog1Img {
@@ -313,18 +315,16 @@ h2::before {
 
     .link a {
         display: inline-block;
-        width: 80%;
-        line-height: 33px;
+        width: 70%;
         font-size: 18px;
         color: var(--color-text);
         text-decoration: none;
         margin: 20px 10px;
+        line-height: 33px;
     }
 
    .blocks > .link {
-        /* line-height: 80px; */
-        /* padding: 60px 10px ; */
-        /* background: red; */
+        margin: 0;
     }
 
     #plus {
@@ -342,21 +342,12 @@ h2::before {
         font-size: 18px;
     }
 
-    #plus:hover {
-        background-color: black;
-        transform: scale(1.1);
-        color: #fff;
-        font-size: 20px;
-    }
-
-
 
 .blog > h1 {
     display: inline-block;
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    margin-top: 80px;
     position: relative;
     text-transform: uppercase;
 }
