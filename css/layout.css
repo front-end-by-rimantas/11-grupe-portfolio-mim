@@ -60,3 +60,26 @@
     }
 }
 
+/************************************************************/
+/* My blog */
+
+/************************************************************/
+
+@media (max-width: 1300px) {
+      .blocks > .link {
+        height: 120px;
+    }
+}
+@media (max-width: 900px) {
+     .container > .blog > .blocks {
+       width: 80%;
+       margin: 20px calc((100% - 80%) / 2);
+    }
+
+    .blocks > .link {
+        height: initial;
+    }
+}
+@media (max-width: 650px) {
+    
+}
