@@ -7,7 +7,7 @@
     text-align: center;
     transition: all .3s ease 0s;
 }
-    .hero > > left > .btn:hover,
+    .hero > left > .btn:hover,
     .about .left > .btn:hover,
     .touch form > .btn:hover {
     background-color: #000;
