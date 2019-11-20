@@ -7,10 +7,10 @@
     text-align: center;
     transition: all .3s ease 0s;
 }
-    .hero > > left > .btn:hover,
+    .hero > .left > .btn:hover,
     .about .left > .btn:hover,
     .touch form > .btn:hover {
-    background-color: #000;
+    background-color: #000000;
     }
     .hero > .left > .btn {
         font-weight: 600;
