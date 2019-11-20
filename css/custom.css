@@ -54,37 +54,36 @@ h2 {
 /* HERO */
 
 /************************************************************/
-.author {
-    display: inline-block;
-    float: right;
-    margin-right: 15px;
-}
-.right {
-    margin-left: 15px;
-}
-.logo {
-    height: 40px;
-}
-
 .hero {
     display: inline-block;
-    width: 50%;
-    margin-top: 220px;
+    width: 100%;
     padding: 0 15px;
 }
 
-    .hero > h4 {
+    .hero > .author {
+        display: inline-block;
+        float: right;
+        margin-right: 15px;
+    }
+    .hero > .left {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        margin-top: 220px;
+    }
+
+    .hero > .left > h4 {
         color: #919191;
         font-size: 16px;
         margin-bottom: 15px;
         letter-spacing: 1px;
     }
-    .hero > h1 {
+    .hero > .left > h1 {
         color: #414141;
         margin-bottom: 15px;
         font-size: 44px;
     }
-    .hero > p {
+    .hero > .left > p {
         color: #6a6a6a;
         font-size: 20px;
         margin-bottom: 45px;
@@ -310,12 +309,7 @@ h2::before {
         height: 14px;
         margin: 0 5px -3px 10px;
      }
-  
-    .link {
-        display: inline-block;
-        width: 100%;
-        padding: 26px 20px;
-    }
+
 
     .link a {
         display: inline-block;
