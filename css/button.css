@@ -1,19 +1,36 @@
-.hero > .btn,
-.about .left > .btn {
+.btn {
     display: inline-block;
-    padding: 12px 50px;
     color: #fff;
     background-color: var(--color-button);
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 6px;
-    font-weight: 600;
+    text-align: center;
+    transition: all .3s ease 0s;
 }
-    .btn:hover,
-    .about .left > .btn:hover {
+    .hero > .btn:hover,
+    .about .left > .btn:hover,
+    .touch form > .btn:hover {
     background-color: #000;
     }
 
-.about .left > .btn{
-    padding: 12px 30px;
-}
+    .hero > .btn {
+        font-weight: 600;
+        border-radius: 5px;
+        line-height: 50px;
+        height: 47px;
+        padding: 0 50px;
+    }
+    .about .left > .btn {
+        font-weight: 600;
+        padding: 0 30px;
+        border-radius: 5px;
+        line-height: 50px;
+        height: 47px;
+    }
+    .touch form > .btn {
+        border-radius: 0px;
+        font-weight: normal;
+        padding: 0 40px;
+        line-height: 40px;
+        height: 40px;
+    }

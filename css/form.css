@@ -155,12 +155,27 @@
         margin: 40px 0 0;
     }
 }
-/* @media (max-width: 900px) {
-    .content > .touch > .filling > form {
-        margin: 40px calc((100% - 50%) / 2) 0;
+@media (max-width: 900px) {
+    .content > .info {
+        width: 100%;
+    }
+    .content > .touch {
+        width: 100%;
+    }
+    .content > .touch > .filling > form > .input_here input {
+        width: 100%;
+        margin: 0;
+    }
+    .content > .touch > .filling > form > .input_here > input:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    .filling > form > textarea {
+        margin-top: 40px;
     }
 }
 @media (max-width: 650px) {
+    .content > .touch > .filling > form > .btn {
+        width: 190px;
+        margin: 30px calc((100% - 190px) / 2 ) 0;
+    }
 }
-@media (max-width: 500px) {
-} */
