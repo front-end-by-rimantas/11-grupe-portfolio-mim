@@ -2,17 +2,25 @@
 
 // header
 
-const ul = document.querySelector('ul');
-const hamburger = document.querySelector('.fa-bars');
-const close = document.querySelector('.fa-times');
+    // hamburger and exit buttons
+    const ul = document.querySelector('ul');
+    const hamburger = document.querySelector('.fa-bars');
+    const close = document.querySelector('.fa-times');
 
-hamburger.addEventListener('click', ()=>{
-    ul.classList.add('menu-show');
-});
+    hamburger.addEventListener('click', ()=>{
+        ul.classList.add('menu-show');
+    });
 
-close.addEventListener('click', ()=>{
-    ul.classList.remove('menu-show');
-});
+    close.addEventListener('click', ()=>{
+        ul.classList.remove('menu-show');
+    });
+
+
+
+    // navigation .active class       on scroll event
+
+    window.addEventListener('scroll', headerScroll);
+
 
 // hero
 

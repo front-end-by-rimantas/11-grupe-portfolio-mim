@@ -1,7 +1,30 @@
 "use strict";
 
 // header
+function headerScroll() {
+    //kokiame aukstyje esu
+    const height = Math.floor(window.scrollY);
+    console.log(height);
+}
 
+        //kokiame aukstyje yra tam tikra sekcija(kurios yra paminetos header nav)
+        const DOMlinks = document.querySelectorAll('.navigation > a');
+        console.log(DOMlinks);
+
+        let links = [];
+        for (let i=0; i<DOMlinks.length; i++) {
+        const element = DOMlinks[i];
+        const href = element.hash;
+        console.log(href);
+        }
+        
+        //kuri sekcija man artimiausia
+        //jeigu artimiausia sekcija yra pamineta header nav'e
+        //tuomet atimame 'active' klase is tos kuri siuo metu ja turi
+        //naujai sekcijai duodame klase active  
+
+
+        
 // hero
 
 // clients
