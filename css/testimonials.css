@@ -1,0 +1,36 @@
+.testimonials {
+    display: inline-block;
+    width: 100%;
+}
+    .testimonials > .list {
+        display: inline-block;
+        width: 100%;
+    }
+        .testimonials > .list > .monial {
+            display: inline-block;
+            width: 100%;
+        }
+            .monial > img {
+
+            }
+            .monial > .testimonial-text {
+                display: inline-block;
+                width: 100%;
+                text-align: center;
+
+            }
+                .monial > .testimonial-text > .name {
+                    
+                }
+                .monial > .testimonial-text > .duties {
+                    
+                }
+                .monial > .testimonial-text > p {
+                    
+                }
+
+    .testimonials > .controls {
+        display: inline-block;
+        width: 100%;
+
+    }

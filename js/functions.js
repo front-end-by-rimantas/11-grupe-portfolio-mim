@@ -91,6 +91,45 @@ function renderBlocks( list ) {
 }
 
 // testimonials
+function renderTestimonials( list ) {
+    const DOM = document.querySelector('#testimonials');
+    let HTML = '';
+    let listHTML = '';
+
+    // testimonial 
+    for ( let i=0; i<list.length; i++ ) {
+        const monial = list[i];
+
+        listHTML += `<div class="monial">
+                        <img src="./img/${monial.image}">
+                        <div class="testimonial-text">
+                            <div class="name">${monial.name}</div>
+                            <div class="duties">${monial.duties}</div>
+                            <p>${monial.text}</p>
+                        </div>
+                    </div>`;
+    }
+
+    // controlsai
+
+    // apjungimas
+    HTML += `<div class="testimonials">
+                <div class="list">
+                    ${listHTML}
+                </div>
+                <div class="controls">
+                ---
+                </div>
+            </div>`;
+
+    // ikeliam i DOM'a
+    document.querySelector('#testimonials').innerHTML = HTML;
+
+    // click eventas
+
+
+    return DOM.innerHTML = HTML;
+}
 
 // contact me
 
