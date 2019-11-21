@@ -53,12 +53,11 @@ function renderGallery( list ) {
         }
     }
     
-    filterHTML += `<div class="item">All</div>`;
+    filterHTML += `<div class="item active">All</div>`;
     filterHTML += `<div class="item">${uniqueTags[4]}</div>`;
     for ( let i=0; i<uniqueTags.length-1; i++) {
         filterHTML += `<div class="item">${uniqueTags[i]}</div>`;
     }
-    console.log(uniqueTags);
     
 
     // gallery  be tag'u
@@ -77,7 +76,7 @@ function renderGallery( list ) {
                     </div>`;
     }
     HTML = `<div class="gallery">
-                <div class="filter id="center">
+                <div class="filter">
                     ${filterHTML}
                 </div>
                 <div class="list">
