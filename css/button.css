@@ -10,7 +10,8 @@
     .hero > .left > .btn:hover,
     .about .left > .btn:hover,
     .touch form > .btn:hover,
-    .footer-content > .btn.btn-top:hover {
+    .footer-content > .btn.btn-top:hover,
+    .btn.btn-top:hover {
     background-color: #000000;
     }
     .hero > .left > .btn {
@@ -36,11 +37,12 @@
         cursor: pointer;
     }
     .btn.btn-top {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 35px;
         text-align: center;
         padding: 0 10px;
-        position: absolute;
-        top: -60px;
-        right: -30px;
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
     }
+    

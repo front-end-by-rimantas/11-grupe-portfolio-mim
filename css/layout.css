@@ -138,7 +138,7 @@
         margin: 0 calc(50% - 200px);
     }
 }
-=======
+
 @media (max-width: 900px) {
      .container > .blog > .blocks {
        width: 80%;
