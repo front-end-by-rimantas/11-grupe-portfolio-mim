@@ -68,13 +68,6 @@
 
 /************************************************************/
 
-.container > .header {
-    display: inline-block;
-    width: 1200px;
-    margin: 0 calc(50% - 600px);
-    padding: 40px
-}
-
 @media (max-width: 1300px) {
     .container > .header {
         width: 1000px;
