@@ -65,16 +65,25 @@
 @media (max-width: 1100px) {
     .blocks > .link a  {
       text-align: center;
-  }
+    }
 }
 @media (max-width: 900px) {
     .container > .blog > .blocks  {
       width: 80%;
       margin: 40px calc((100% - 80%) / 2);
-  }
+    }
   .blocks > .link a  {
     text-align: start;
+    }
 }
+@media (max-width: 900px) {
+    .container > .blog > .blocks {
+      width: 80%;
+      margin: 20px calc((100% - 80%) / 2);
+    }
+   .blocks > .link {
+       height: initial;
+    }
 }
 
 /************************************************************/
@@ -150,16 +159,5 @@
     .container > .header {
         width: 400px;
         margin: 0 calc(50% - 200px);
-    }
-}
-
-@media (max-width: 900px) {
-     .container > .blog > .blocks {
-       width: 80%;
-       margin: 20px calc((100% - 80%) / 2);
-    }
-
-    .blocks > .link {
-        height: initial;
     }
 }

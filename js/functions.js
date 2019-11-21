@@ -118,7 +118,7 @@ function renderTestimonials( list ) {
                     ${listHTML}
                 </div>
                 <div class="controls">
-                ---
+                    <h3>---</h3>
                 </div>
             </div>`;
 

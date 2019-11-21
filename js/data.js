@@ -109,7 +109,7 @@ const testimonials = [
     {
         image: 'testimonial.png',
         name: 'Janet Wilson',
-        duties: 'ceo',
+        duties: 'CEO',
         text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseguuntur magni dolores eos qui ratione voluptatem sequi nesciunt'
     },
     {
