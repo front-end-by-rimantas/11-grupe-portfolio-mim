@@ -5,18 +5,28 @@
     .gallery > .filter {
         display: inline-block;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+    }
+    .gallery > .filter > .item {
+        display: inline-block;
+        float: left;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        cursor: pointer;
     }
     .gallery > .list {
         display: inline-block;
-        width: 100%;
+        width: calc(100% - 10px);
+        margin-left: 5px;
     }
         .gallery > .list > .work {
             display: inline-block;
             width: calc((100% - 60px) / 3);
             height: 450px;
             float: left;
-            margin: 0 0 30px 30px;
+            margin: 0 10px 20px;
             overflow: hidden;
             position: relative;
             color: #fff;
