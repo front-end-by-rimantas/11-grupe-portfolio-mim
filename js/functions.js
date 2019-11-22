@@ -3,25 +3,61 @@
 // header
 function headerScroll() {
     //kokiame aukstyje esu
-    const height = Math.floor(window.scrollY);
-    console.log(height);
-}
+    const headerHeight = document.querySelector('.header').offsetHeight; // pridedam header height prie bendro aukscio
+    const height = window.scrollY + headerHeight;
+
 
         //kokiame aukstyje yra tam tikra sekcija(kurios yra paminetos header nav)
         const DOMlinks = document.querySelectorAll('.navigation > a');
-        console.log(DOMlinks);
+        // console.log(DOMlinks);
 
-        let links = [];
-        for (let i=0; i<DOMlinks.length; i++) {
-        const element = DOMlinks[i];
-        const href = element.hash;
-        console.log(href);
-        }
         
+        let links = [];                            // susikuriame object kuriame issaugosime reikiamus linkus
+        for (let i=0; i<DOMlinks.length; i++) {    // paleidziame loop kuris praeina pro visus DOMlinks narius
+        const element = DOMlinks[i];               // susikuriam variable kuriame saugosime kiekviena DOMlinks [i] nari
+        const href = element.href;                 // consoleje, prie kiekvieno elemento, randame 'href' ir ji issaugome variable href
+        const split = href.split('#');             // splitiname 'href' nuoroda, kad gautume id nuoroda
+        links.push('#'+split[1]);                  // prie link object pridedame # ir split antraji nari (id pavadinima)
+        }
+        // console.log(links);                        // iprintiname .navigation a elementu href splitintas nuorodas
+
+
+        // susirandame sekciju poziciju aukscius 
+        const sectionHeight = [];
+        for (let i=0; i<links.length; i++) {        // loop 
+            if (links[i] === '#') {                 // jei links[i] narys turi tik #, tuomet ji praleidziame
+                sectionHeight.push(0);              // pushinam o, nes sukureme if kuris praleidzia # elementa
+                continue;
+            }
+            const section = document.querySelector(links[i]);   // issaugome links[i] nario html syntaxe(nuoroda) i section variable
+            sectionHeight.push(section.offsetTop);              // issaugome sekciju pozicija 'offsetTop' 
+        }
+
+        // console.log(sectionHeight);
+        // console.log(height);
+
         //kuri sekcija man artimiausia
-        //jeigu artimiausia sekcija yra pamineta header nav'e
+        let currentSectionImIn = 0;                     //          
+        for (let i=0; i<sectionHeight.length; i++) {    // jei sekcijos aukstis yra didesnis uz mano dabartini
+            if (sectionHeight[i] > height) {                // auksti, tuomet man ta sekcija netinka (kill this )
+                break;                                      // reiskia man tinka pries tai esanti sekcija
+            }
+            currentSectionImIn = i;
+            
+        }
+        console.log(links[currentSectionImIn]); 
+
         //tuomet atimame 'active' klase is tos kuri siuo metu ja turi
-        //naujai sekcijai duodame klase active  
+        document.querySelector('.header nav > a.active').classList.remove('active');
+
+        //naujai sekcijai duodame klase active
+        document.querySelector(`.header nav > a[href="${links[currentSectionImIn]}"]`)
+        .classList.add('active');
+}
+      
+
+    
+          
 
 
         
