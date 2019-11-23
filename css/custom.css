@@ -124,19 +124,24 @@ h2 {
         .container > .hero {
             margin: 0px calc(50% - 300px);
         }
+        .hero > .left {
+            padding-right: 20px;
+        }
         .hero > .left h1 {
             font-size: 28px;
         }
     }
     @media (max-width: 650px) {
         .container > .hero {
-            width: 500px;
-            margin: 0px calc(50% - 250px);
+            width: 100%;
+            margin: 0;
+            padding: 0 15px;
             text-align: center;
         }
         .container > .hero > .left {
             width: 100%;
-            margin: 80px 0 40px;
+            margin: 40px 0;
+            padding-right: 0;
         }
         .container > .hero > .author {
             width: 100%;

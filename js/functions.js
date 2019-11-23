@@ -75,7 +75,8 @@ function headerScroll() {
                 document.querySelector('.header-content > .logo').classList.remove('logoScale');
             }
         }
-        
+
+ 
 // hero
 
 // clients

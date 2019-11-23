@@ -6,4 +6,6 @@
     --color-text: #6A6A6A;
 
     --color-button: #393939;
+
+    /* --elementWidth: document.querySelector('.content').offsetWidth; */
 }

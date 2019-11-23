@@ -103,6 +103,7 @@
    .container > .header-content {
         width: 100%;
         padding: 10px calc((100% - 800px) / 2);
+        /* padding: 10px calc((100% - var(--elementWidth)) / 2); */
         margin: 0;
     }
     .header-content.header-show {
