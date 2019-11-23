@@ -13,12 +13,6 @@
     margin: 100px calc(50% - 600px);
 }
 
-.container > .hero {
-    margin: 0px calc(50% - 600px);
-    padding-bottom: 0;
-}
-    
-
 @media (max-width: 1300px) {
     .container > .content {
         width: 1000px;

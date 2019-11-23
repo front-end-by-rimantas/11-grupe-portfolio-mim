@@ -102,14 +102,14 @@
    }
    .container > .header-content {
         width: 100%;
-        padding: 10px calc((100% - 700px) / 2);
+        padding: 10px calc((100% - 800px) / 2);
         margin: 0;
     }
     .header-content.header-show {
-        padding: 0 calc((100% - 700px) / 2);
+        padding: 0 calc((100% - 800px) / 2);
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
    .container > .header-content {
         width: 100%;
         padding: 10px calc((100% - 600px) / 2);
