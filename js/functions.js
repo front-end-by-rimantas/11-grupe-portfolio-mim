@@ -64,12 +64,15 @@ function headerScroll() {
 }
       
         //fixed header on scroll
+        // logo scale on scroll
         function fixedHeader() {
             if (window.scrollY > 200) {
-                document.querySelector('header').classList.add('header-show');
+                document.querySelector('.header-content').classList.add('header-show');
+                document.querySelector('.header-content > .logo').classList.add('logoScale');
             }
             if (window.scrollY === 0 ) {
-                document.querySelector('header').classList.remove('header-show');
+                document.querySelector('.header-content').classList.remove('header-show');
+                document.querySelector('.header-content > .logo').classList.remove('logoScale');
             }
         }
         
