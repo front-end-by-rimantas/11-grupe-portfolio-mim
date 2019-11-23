@@ -7,5 +7,7 @@
 
     --color-button: #393939;
 
+    --DOMhero: document.querySelector('.hero');
+    --heroWidth: parseInt(getComputedStyle(DOMhero).width);
     /* --elementWidth: document.querySelector('.content').offsetWidth; */
 }
