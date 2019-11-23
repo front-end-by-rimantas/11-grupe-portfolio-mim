@@ -1,0 +1,27 @@
+.container h1 {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-text);
+    position: relative;
+}
+
+    .container h1::after {
+        content: " ";
+        border-bottom: 2px solid var(--color-text);
+        display: block;
+        width: 100px;
+        position: absolute;
+        bottom: -10px;
+        left: calc((100% - 100px) / 2);
+    }
+    .container h1::before {
+        content: " ";
+        border-bottom: 2px solid var(--color-text);
+        display: block;
+        width: 60px;
+        position: absolute;
+        bottom: -6px;
+        left: calc((100% - 60px) / 2);
+    }
