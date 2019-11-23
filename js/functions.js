@@ -33,9 +33,6 @@ function headerScroll() {
             sectionHeight.push(section.offsetTop);              // issaugome sekciju pozicija 'offsetTop' 
         }
 
-        // console.log(sectionHeight);
-        // console.log(height);
-
         //kuri sekcija man artimiausia
         let currentSectionImIn = 0;                     //          
         for (let i=0; i<sectionHeight.length; i++) {    // jei sekcijos aukstis yra didesnis uz mano dabartini
@@ -53,13 +50,28 @@ function headerScroll() {
         //naujai sekcijai duodame klase active
         document.querySelector(`.header nav > a[href="${links[currentSectionImIn]}"]`)
         .classList.add('active');
+
+        //contact sekcijai duodame klase active
+        const contactHeight = document.querySelector('#contact').offsetTop + (-150);  // naudojant +(-150) gali viskas crashinti jei pasikeis sekciju dydziai
+        // const pageBottom = window.scrollY - headerHeight;
+        if (window.scrollY > contactHeight) {
+            document.querySelector('.contact').classList.add('active');
+            document.querySelector('.blog').classList.remove('active');
+        } 
+        if ( window.scrollY < contactHeight) {
+            document.querySelector('.contact').classList.remove('active');
+        }
 }
       
-
-    
-          
-
-
+        //fixed header on scroll
+        function fixedHeader() {
+            if (window.scrollY > 200) {
+                document.querySelector('header').classList.add('header-show');
+            }
+            if (window.scrollY === 0 ) {
+                document.querySelector('header').classList.remove('header-show');
+            }
+        }
         
 // hero
 

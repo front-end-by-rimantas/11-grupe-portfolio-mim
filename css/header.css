@@ -10,12 +10,13 @@
     background-color: var(--color-primary); */
 }
 
-.header-show {
-    position: fixed;
-    box-shadow: 0px 2px 6px gray;
-    z-index: 1;
-    background-color: var(--color-primary);
-}
+    .header-show {
+        position: fixed;
+        box-shadow: 0px 2px 6px gray;
+        z-index: 1;
+        background-color: var(--color-primary);
+        transition: all 4s;
+    }
 
     .container > .header-content {
         display: inline-block;

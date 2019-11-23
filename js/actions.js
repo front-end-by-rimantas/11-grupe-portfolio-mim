@@ -21,6 +21,8 @@
 
     window.addEventListener('scroll', headerScroll);
 
+    window.addEventListener('scroll', fixedHeader);
+
 
 // hero
 

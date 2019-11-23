@@ -57,7 +57,8 @@ h2 {
 .hero {
     display: inline-block;
     width: 100%;
-    padding: 0 15px;
+    margin-top: 20px;
+    padding: 40px 15px 0;
 }
 
     .hero > .author {
@@ -65,6 +66,7 @@ h2 {
         float: right;
         margin-right: 15px;
     }
+
     .hero > .left {
         display: inline-block;
         width: 50%;
