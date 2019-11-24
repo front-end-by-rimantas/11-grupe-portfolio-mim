@@ -123,7 +123,7 @@ const testimonials = [
         name: 'John Doe',
         duties: 'Co-Founder RegalTheme',
         text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseguuntur magni dolores eos qui ratione voluptatem sequi nesciunt'
-    },
+    }
     ];
     
 // contact me

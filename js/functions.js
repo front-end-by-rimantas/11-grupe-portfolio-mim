@@ -95,41 +95,61 @@ function renderTestimonials( list ) {
     const DOM = document.querySelector('#testimonials');
     let HTML = '';
     let listHTML = '';
+    let dashHTML = '';
+    
+    if ( !Array.isArray(list) ) {
+        return console.error('ERROR: nera saraso...');
+    }
+    if ( list.length === 0 ) {
+        return console.error('ERROR: sarasas tuscias...');
+    }
 
     // testimonial 
     for ( let i=0; i<list.length; i++ ) {
         const monial = list[i];
 
-        listHTML += `<div class="monial">
-                        <img src="./img/${monial.image}">
-                        <div class="testimonial-text">
-                            <div class="name">${monial.name}</div>
-                            <div class="duties">${monial.duties}</div>
-                            <p>${monial.text}</p>
-                        </div>
-                    </div>`;
+    /* const randomTestimonial = list[ Math.floor(Math.random() * list.length) ]; */ 
+    
+    listHTML += `<div class="monial data-index="${i}" style="width: ${100 / list.length}%;">
+                    <img src="./img/${monial.image}">
+                    <div class="testimonial-text">
+                        <div class="name">${monial.name}</div>
+                        <div class="duties">${monial.duties}</div>
+                        <p>${monial.text}</p>
+                    </div>
+                </div>`;
+
+    dashHTML += `<div class="dash ${i === 0 ? 'current-slide' : ''}"
+                     data-cursor="${i}"></div>`;
     }
-
-    // controlsai
-
     // apjungimas
     HTML += `<div class="testimonials">
-                <div class="list">
+                <div class="list" style="width: ${100 * list.length}%;">
                     ${listHTML}
                 </div>
                 <div class="controls">
-                    <h3>---</h3>
+                    ${dashHTML}
                 </div>
             </div>`;
+   
 
     // ikeliam i DOM'a
-    document.querySelector('#testimonials').innerHTML = HTML;
+    DOM.innerHTML = HTML;
 
-    // click eventas
+   // click eventas
+    const DOMlist = DOM.querySelector('.list');
+    const DOMdash = DOM.querySelectorAll('.controls > .dash');
+    for ( let i=0; i<DOMdash.length; i++ ) {
+        DOMdash[i].addEventListener('click', (event) => {
+           
+            const cursor = parseInt(event.target.dataset.cursor);
+            DOMlist.style.marginLeft = (cursor * -100) + '%';
 
-
-    return DOM.innerHTML = HTML;
+            // active dash
+            DOM.querySelector('.controls > .dash.current-slide').classList.remove('current-slide');
+            event.target.classList.add('current-slide');
+        })
+    }
+   
+   return;
 }
-
-// contact me
-
