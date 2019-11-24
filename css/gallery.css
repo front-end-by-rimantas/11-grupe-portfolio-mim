@@ -6,13 +6,12 @@
         display: inline-block;
         width: 100%;
         margin-bottom: 50px;
-        /* padding: 0 calc((100% - 50%) / 2); */
     }
     .gallery > .filter > .item {
         display: inline-block;
         float: left;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 28px;
         padding: 5px 10px;
         text-transform: uppercase;
         cursor: pointer;
@@ -22,16 +21,24 @@
         .gallery > .filter > .item::after {
             content: "";
             position: absolute;
-            left: 5px;
-            top: 14px;
+            left: 7px;
+            top: 19px;
             width: 0;
             border-bottom: 1px solid var(--color-text);
             transform: scaleX(0);
-            transition: transform .5s ease-in;
+            transition: transform .3s ease-in;
         }
-        .gallery > .filter > .item:hover::after,
+        .gallery > .filter > .item:hover::after {
+            width: calc(100% - 14px);
+            transform: scaleX(1);
+        }
         .gallery > .filter > .item.active::after {
-            width: calc(100% - 10px);
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 19px;
+            border-bottom: 1px solid var(--color-text);
+            width: calc(100% - 14px);
             transform: scaleX(1);
         }
 
@@ -41,7 +48,7 @@
         margin-left: 5px;
     }
         .gallery > .list > .work {
-            display: inline-block;
+            display: none;
             width: calc((100% - 60px) / 3);
             height: 450px;
             float: left;
@@ -49,6 +56,9 @@
             overflow: hidden;
             position: relative;
             color: #fff;
+        }
+        .gallery > .list > .work.show {
+            display: inline-block;
         }
             .gallery .work > img {
                 display: inline-block;
