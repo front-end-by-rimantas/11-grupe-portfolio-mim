@@ -10,7 +10,7 @@ function headerScroll() {
         //kokiame aukstyje yra tam tikra sekcija(kurios yra paminetos header nav)
         const DOMlinks = document.querySelectorAll('.navigation > a');
 
-        let links = [];                            // susikuriame object kuriame issaugosime reikiamus linkus
+        let links = [];                            // susikuriame array kuriame issaugosime reikiamus linkus
         for (let i=0; i<DOMlinks.length; i++) {    // paleidziame loop kuris praeina pro visus DOMlinks narius
         const element = DOMlinks[i];               // susikuriam variable kuriame saugosime kiekviena DOMlinks [i] nari
         const href = element.href;                 // consoleje, prie kiekvieno elemento, randame 'href' ir ji issaugome variable href
@@ -96,7 +96,23 @@ function generateProgress( data ) {
     return HTML;
 }
 
-// numbers
+// blog page
+
+function renderBlog(data) {
+    let HTML = '';
+
+    for (let i=0; i<data.length; i++) {
+        HTML += '<div class="renderBlock"> <img src="./img/blog/'+ data[i].image +'" alt="post 1 image" class="post">\
+                 <div class="right">\
+                 <i class="fa fa-clock-o"></i>\
+                  <span>'+ data[i].date +'</span>\
+                  <h2>'+ data[i].name +'</h2>\
+                  <p>'+ data[i].text +'</p>\
+                  <a href="#" class="btn">'+ data[i].button +'</a></div></div>'; 
+            }  
+    document.getElementById('render').innerHTML = HTML;
+    return;
+}
 
 // skills
 

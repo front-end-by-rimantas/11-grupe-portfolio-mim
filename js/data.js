@@ -22,7 +22,45 @@ const progress = [
     }
 ];
 
-// numbers
+// blog page
+
+const blogItems = [
+    {
+        image: 'post-1.jpg',
+        date: 'August 21, 2015',
+        name: 'RIO DE JANEIRO THE KINGDOM OF SPORTS',
+        text: 'The 458 Spider’s unique hard top doesn’t deform because of the pressure field that builds up at high speeds either. Cabin space and comfort are actually improved thanks to the roof’s',
+        button: 'read more'
+    },
+    {
+        image: 'post-2.jpg',
+        date: 'August 21, 2015',
+        name: 'Red Carpet the best celebrity dress of 2017',
+        text: 'The 458 Spider’s unique hard top doesn’t deform because of the pressure field that builds up at high speeds either. Cabin space and comfort are actually improved thanks to the roof’s',
+        button: 'read more'
+    },
+    {
+        image: 'post-3.jpg',
+        date: 'August 21, 2015',
+        name: 'Traveling 10 most gorgeous places on Earth',
+        text: 'The 458 Spider’s unique hard top doesn’t deform because of the pressure field that builds up at high speeds either. Cabin space and comfort are actually improved thanks to the roof’s',
+        button: 'read more'
+    },
+    {
+        image: 'post-4.jpg',
+        date: 'August 21, 2015',
+        name: 'Family Cars Weekend Road Warriors',
+        text: 'The 458 Spider’s unique hard top doesn’t deform because of the pressure field that builds up at high speeds either. Cabin space and comfort are actually improved thanks to the roof’s',
+        button: 'read more'
+    },
+    {
+        image: 'post-5.jpg',
+        date: 'August 21, 2015',
+        name: 'Typograph Ink & Water don’t',
+        text: 'The 458 Spider’s unique hard top doesn’t deform because of the pressure field that builds up at high speeds either. Cabin space and comfort are actually improved thanks to the roof’s',
+        button: 'read more'
+    }
+];
 
 // skills
 

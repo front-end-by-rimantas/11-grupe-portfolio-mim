@@ -20,7 +20,6 @@
     // navigation .active class       on scroll event
 
     window.addEventListener('scroll', headerScroll);
-    headerScroll();
     
     window.addEventListener('scroll', fixedHeader);
 
@@ -31,11 +30,15 @@
 
 // about me
 
-document.querySelector('#right-bar').innerHTML = generateProgress(progress);
+// document.querySelector('#right-bar').innerHTML = generateProgress(progress);
 
-// numbers
+// blog page 
 
-// skills
+renderBlog(blogItems);  // reikia iskviesti renderBlog funkcija 
+                        // ir jai kaip duomenis reikia perduoti kintamaji blogItems
+                        // kuris nurodytas data.js
+
+// skills               
 
 // latest work
 
