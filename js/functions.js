@@ -37,7 +37,6 @@ function headerScroll() {
             }                                               // reiskia 'currentSectionImIn' verte lieka 1 (#about)
             currentSectionImIn = i;
         }
-        
 
         //tuomet atimame 'active' klase is tos kuri siuo metu ja turi
         document.querySelector('.header nav > a.active').classList.remove('active');
@@ -69,18 +68,13 @@ function headerScroll() {
                 document.querySelector('.header-content > .logo').classList.remove('logoScale');
             }
         }
-        
-// hero
-
-// clients
 
 // about me
-
 function generateProgress( data ) {
    let HTML = '';
    
    data.forEach( bar => {
-       HTML += `<div class="progress-bar">
+       HTML += `<div class="progress-bar animate">
                     <div class="text">
                         <div class="title">${bar.title}</div>
                         <div class="value">${bar.value}%</div>
@@ -96,11 +90,29 @@ function generateProgress( data ) {
     return HTML;
 }
 
-// numbers
+function barScroll() {
+    const myPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const scrollHeight = myPosition + windowHeight;
+    
+    const DOMbar = document.querySelector('#about');
+    const aboutPosition = DOMbar.offsetTop;
+    const aboutTopPadding = parseFloat(getComputedStyle( DOMbar ).paddingTop);
+    const barHeight = DOMbar.querySelector('.progress-bar').offsetHeight;
+    const barPosition = aboutPosition + aboutTopPadding + barHeight;
 
-// skills
-
-// latest work
+    if ( barPosition < scrollHeight ) {
+        const progressBars = DOMbar.querySelectorAll('.progress-bar');
+        for ( let i=0; i<progressBars.length; i++ ) {
+            const bar = progressBars[i];
+            if ( !bar.classList.contains('animate') ) {
+                bar.classList.add('animate');
+            }
+        }
+    }
+    
+    return;
+}
 
 // portfolio
 function renderGallery( list ) {
@@ -244,6 +256,8 @@ function renderTestimonials( list ) {
     // testimonial 
     for ( let i=0; i<list.length; i++ ) {
         const monial = list[i]; 
+
+    /* const randomTestimonial = list[ Math.floor(Math.random() * list.length) ]; */
     
     listHTML += `<div class="monial data-index="${i}" style="width: ${100 / list.length}%;">
                     <img src="./img/${monial.image}">
