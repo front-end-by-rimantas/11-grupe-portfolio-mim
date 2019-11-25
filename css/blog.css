@@ -46,7 +46,7 @@
                 line-height: 20px;
                 font-size: 20px;
             }
-            .right > span {
+            .renderBlock > .right > span {
                 margin-left: 10px;
                 line-height: 20px;
             }
@@ -65,10 +65,10 @@
                 letter-spacing: 1px;
                 margin: 0 0 20px;
             }
-            .right > .btn {
+            .renderBlock > .right > .btn {
                 padding: 10px 20px;
             }
-            .right a:hover {
+            .renderBlock > .right a:hover {
                 box-shadow: 2px 2px 4px 2px gray;
             }
 

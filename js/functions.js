@@ -110,9 +110,10 @@ function renderBlog(data) {
                   <p>'+ data[i].text +'</p>\
                   <a href="#" class="btn">'+ data[i].button +'</a></div></div>'; 
             }  
-    document.getElementById('render').innerHTML = HTML;
-    return;
+        return document.getElementById('render').innerHTML = HTML;
 }
+
+
 
 // skills
 

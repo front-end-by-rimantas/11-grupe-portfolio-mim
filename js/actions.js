@@ -15,8 +15,6 @@
         ul.classList.remove('menu-show');
     });
 
-
-
     // navigation .active class       on scroll event
 
     window.addEventListener('scroll', headerScroll);
@@ -30,13 +28,11 @@
 
 // about me
 
-// document.querySelector('#right-bar').innerHTML = generateProgress(progress);
+document.querySelector('#right-bar').innerHTML = generateProgress(progress);     
 
 // blog page 
 
-renderBlog(blogItems);  // reikia iskviesti renderBlog funkcija 
-                        // ir jai kaip duomenis reikia perduoti kintamaji blogItems
-                        // kuris nurodytas data.js
+// renderBlog(blogItems);  
 
 // skills               
 
@@ -54,3 +50,6 @@ renderBlocks( services );
 
 // footer
 
+// gallery 
+
+renderArtGallery(artGallery);
