@@ -46,6 +46,7 @@ renderGallery( works );
 renderBlocks( services );
 
 // testimonials
+renderTestimonials( testimonials );
 
 // contact me
 
