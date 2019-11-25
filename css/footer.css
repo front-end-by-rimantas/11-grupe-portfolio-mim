@@ -38,7 +38,6 @@
         width: 800px;
         margin: 20px calc(50% - 400px);
     }
-    
 }
 @media (max-width: 900px) {
     .container > .footer-content {
@@ -48,24 +47,17 @@
 }
 @media (max-width: 650px) {
     .container > .footer-content {
-        width: 400px;
-        margin: 20px calc(50% - 200px);
+        width: 100%;
+        margin: 0;
+        text-align: center;
     }
-        footer-content > .foot-left,
+        .footer-content > .foot-left,
         .footer-content > .foot-right {
             width: 100%;
-            padding: 0px;
+            padding: 0;
         }
             .foot-left > span,
             .foot-right > a {
-                /* text-align: center; */
-                padding: 0 5px;
+                padding: 0 10px;
             } 
-}
-@media (max-width: 400px) {
-    .container > .footer-content {
-        width: 400px;
-        margin: 10px 5px;
-    }
-    
 }

@@ -105,7 +105,27 @@ const services = [
 ];
 
 // testimonials
-
+const testimonials = [
+    {
+        image: 'testimonial.png',
+        name: 'Janet Wilson',
+        duties: 'CEO',
+        text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseguuntur magni dolores eos qui ratione voluptatem sequi nesciunt'
+    },
+    {
+        image: 'testimonial.png',
+        name: 'Louis Morrison',
+        duties: 'RegalTheme',
+        text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseguuntur magni dolores eos qui ratione voluptatem sequi nesciunt'
+    },
+    {
+        image: 'testimonial.png',
+        name: 'John Doe',
+        duties: 'Co-Founder RegalTheme',
+        text: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conseguuntur magni dolores eos qui ratione voluptatem sequi nesciunt'
+    }
+    ];
+    
 // contact me
 
 // footer
