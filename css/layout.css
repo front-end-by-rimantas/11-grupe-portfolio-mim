@@ -13,12 +13,6 @@
     margin: 100px calc(50% - 600px);
 }
 
-.container > .hero {
-    margin: 0px calc(50% - 600px);
-    padding-bottom: 0;
-}
-    
-
 @media (max-width: 1300px) {
     .container > .content {
         width: 1000px;
@@ -85,79 +79,14 @@
        height: initial;
     }
 }
-
-/************************************************************/
-/* HEADER */ /*hero*/
-
-/************************************************************/
-
-.container > .header {
-    display: inline-block;
-    width: 1200px;
-    margin: 0 calc(50% - 600px);
-    padding: 40px
-}
-
-@media (max-width: 1300px) {
-    .container > .header {
-        width: 1000px;
-        margin: 0 calc(50% - 500px);
-    }
-    .container > .hero {
-        width: 1000px;
-        margin: 0 calc(50% - 500px);
-    }
-}
-
-@media (max-width: 1100px) {
-    .links a {
-        display: none;
-    }
-    .container > .header {
-        width: 800px;
-        margin: 0 calc(50% - 400px);
-    }
-        .container > .hero {
-            width: 800px;
-            margin: 0 calc(50% - 400px);
-        }
-       .container > .hero > .author {
-            width: 50%;
-            margin-right: 0;
-           
-        }
-        .container > .hero > .left {
-            width: 50%;
-            margin-top: 180px;
-        }
-}
-
 @media (max-width: 900px) {
-    .container > .header {
-        width: 600px;
-        margin: 0 calc(50% - 300px);
-    }
-    .container > .hero {
-        width: 600px;
-        margin: 0 calc(50% - 300px);
-    }
-    .container > .hero > .left {
-        display: block;
-        width: 100%;
-        margin: 0;
-        text-align: center;
+     .container > .blog > .blocks {
+       width: 80%;
+       margin: 20px calc((100% - 80%) / 2);
     }
 
-    .container > .hero > .author {
-       width: 70%;
-       margin: 40px calc((100% - 70%) / 2) 0;
-       padding: 0;
+    .blocks > .link {
+        height: initial;
     }
 }
 
-@media (max-width: 650px) {
-    .container > .header {
-        width: 400px;
-        margin: 0 calc(50% - 200px);
-    }
-}
