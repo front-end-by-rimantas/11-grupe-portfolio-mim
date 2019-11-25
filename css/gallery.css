@@ -46,7 +46,6 @@
     .gallery > .list {
         display: inline-block;
         width: calc(100% - 10px);
-        margin-left: 5px;
     }
         .gallery > .list > .work {
             display: none;
@@ -125,3 +124,20 @@
                         line-height: 20px;
                         padding-top: 5px;
                     }
+
+
+@media (max-width: 900px) {
+    .gallery > .list > .work {
+        width: calc((100% - 40px) / 2);
+        margin: 0 10px 20px;
+    }
+}
+@media (max-width: 650px) {
+    .gallery > .list > .work {
+        width: 80%;
+        margin: 0 calc((100% - 80%) / 2) 20px;
+    }
+    .gallery > .list > .work:nth-last-of-type(1) {
+        margin-bottom: 0;
+    }
+}
