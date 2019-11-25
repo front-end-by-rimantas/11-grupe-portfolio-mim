@@ -106,9 +106,7 @@ function renderTestimonials( list ) {
 
     // testimonial 
     for ( let i=0; i<list.length; i++ ) {
-        const monial = list[i];
-
-    /* const randomTestimonial = list[ Math.floor(Math.random() * list.length) ]; */ 
+        const monial = list[i]; 
     
     listHTML += `<div class="monial data-index="${i}" style="width: ${100 / list.length}%;">
                     <img src="./img/${monial.image}">

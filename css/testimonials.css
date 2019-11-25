@@ -1,11 +1,17 @@
-.content > .testimonials {
+.content-testimonials {
+    display: inline-block;
+    width: 700px;
+    margin: 100px calc(50% - 350px);
+    overflow: hidden;
+}
+.content-testimonials > .testimonials {
     display: inline-block;
     width: 700px;
     height: auto;
     margin: 60px calc( ( 100% - 700px ) / 2 ) 0; 
     background-color: var(--color-primary);
     cursor: e-resize;
-    overflow: hidden;
+    
 }
     .testimonials > .list {
         display: inline-block;
@@ -22,9 +28,8 @@
                 width: 100px;
                 height: 100px;
                 position: absolute;
-                top: -20%;
+                top: -25%;
                 left: calc( ( 100% - 100px ) / 2 );
-                overflow: visible;
             }
             .monial > .testimonial-text {
                 display: inline-block;
@@ -54,60 +59,71 @@
         text-align: center; 
         margin: 0 calc( ( 100% - 700px ) / 2 );
         background-color: var(--color-primary); 
-        
     }
         .testimonials > .controls > * {
             display: inline-block;
-            width: auto;
+            width: 100px;
             height: 15px;
             cursor: pointer;
         }
         .testimonials > .controls > .dash {
-            border-bottom: 2px solid #979797;
-            width: 4%;
-            margin: 5% 7px;
-            
+            border-bottom: 2px solid var( --color-text);
+            width: 15px;
+            margin: 35px 7px; 
         }
             .testimonials > .controls > .dash.current-slide {
-                border-bottom: 2px solid #161616;
-                width: 6%;
-                margin: 5% 5px;
+                border-bottom: 2px solid var(--color-title);
+                width: 30px;
+                margin: 35px 7px;
             }  
 
-@media (max-width: 750px) {
-    .testimonials > .list > .monial {
+@media (max-width: 900px) {
+    .content-testimonials {
         width: 500px;
-        margin: 60px calc( ( 100% - 500px ) / 2 ) 0;
+        margin: 50px calc(50% - 250px);
     }
-    .testimonials > .controls {
+    .content-testimonials > .testimonials {
         width: 500px;
-        margin: 0 calc( ( 100% - 500px ) / 2 ) 15px; 
+        margin: 50px calc( ( 100% - 500px ) / 2 ) 0;
     }
 }
-@media (max-width: 500px) {
-    .testimonials > .list > .monial {
-        width: 200px;
-        margin: 10px calc( ( 100% - 200px ) / 2 ) 0;
+@media (max-width: 600px) {
+    .content-testimonials {
+        width: 400px;
+        margin: 30px calc(50% - 200px);
+    }
+    .content-testimonials > .testimonials {
+        width: 400px;
+        margin: 50px calc( ( 100% - 400px ) / 2 ) 0;
     }
         .monial > img {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            top: -8%;
-            left: calc( ( 100% - 50px ) / 2 );
+            top: -15%;
         }
-        .monial > .testimonial-text  {
-            margin: 40px 15px 0;
-            font-size: 15px;
-            line-height: 18px;
+} 
+@media (max-width: 450px) {
+        .content-testimonials {
+            width: 200px;
+            margin: 30px calc(50% - 100px);
         }
-        .monial > .testimonial-text > .name {
-            font-size: 20px;
-            line-height: 25px;
+        .content-testimonials > .testimonials {
+            width: 200px;
+            margin: 10px calc( ( 100% - 200px ) / 2 ) 0;
         }
-    .testimonials > .controls {
-        width: 200px;
-        margin: 0 calc( ( 100% - 200px ) / 2 ) 10px; 
-    }
+            .monial > img {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: -8%;
+                left: calc( ( 100% - 50px ) / 2 );
+            }
+            .monial > .testimonial-text  {
+                margin: 40px 15px 0;
+                font-size: 15px;
+                line-height: 18px;
+            }
+            .monial > .testimonial-text > .name {
+                font-size: 20px;
+                line-height: 25px;
+            }
 }
