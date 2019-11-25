@@ -90,8 +90,6 @@ function renderGallery( list ) {
     
     for ( let i=0; i<filterItems.length; i++ ) {
         filterItems[i].addEventListener('click', updateGallery);
-    }
-    for ( let i=0; i<filterItems.length; i++) {
         filterItems[i].addEventListener('click', activeGallery);
     }
     return; 

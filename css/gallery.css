@@ -1,10 +1,11 @@
 .gallery {
     display: inline-block;
     width: 100%;
+    text-align: center;
 }
     .gallery > .filter {
         display: inline-block;
-        width: 100%;
+        max-width: 100%;
         margin-bottom: 50px;
     }
     .gallery > .filter > .item {
@@ -22,7 +23,7 @@
             content: "";
             position: absolute;
             left: 7px;
-            top: 19px;
+            top: 18px;
             width: 0;
             border-bottom: 1px solid var(--color-text);
             transform: scaleX(0);
@@ -36,7 +37,7 @@
             content: "";
             position: absolute;
             left: 7px;
-            top: 19px;
+            top: 18px;
             border-bottom: 1px solid var(--color-text);
             width: calc(100% - 14px);
             transform: scaleX(1);
