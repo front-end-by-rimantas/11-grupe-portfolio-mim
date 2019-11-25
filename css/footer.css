@@ -2,6 +2,7 @@
     display: inline-block;
     width: 1200px;
     margin: 20px calc(50% - 600px);
+    position: relative;
 }
     .footer-content > .foot-left {
         display: inline-block;
@@ -50,4 +51,21 @@
         width: 400px;
         margin: 20px calc(50% - 200px);
     }
+        footer-content > .foot-left,
+        .footer-content > .foot-right {
+            width: 100%;
+            padding: 0px;
+        }
+            .foot-left > span,
+            .foot-right > a {
+                /* text-align: center; */
+                padding: 0 5px;
+            } 
+}
+@media (max-width: 400px) {
+    .container > .footer-content {
+        width: 400px;
+        margin: 10px 5px;
+    }
+    
 }
