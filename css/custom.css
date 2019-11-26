@@ -157,14 +157,14 @@ h2 {
 /************************************************************/
 /* ABOUT ME */
 
-    #about > .left {
+    .about-me > .left {
         display: inline-block;
         width: 50%;
         float: left;
         padding-left: 15px;
     }
 
-        #about > .left > h3{
+        .about-me > .left > h3{
             display: inline-block;
             width: 100%;
             margin-bottom: 25px;
@@ -173,7 +173,7 @@ h2 {
             text-transform: capitalize;
             color: #4F4F4F;
         }
-        #about > .left > p {
+        .about-me > .left > p {
             display: inline-block;
             width: 100%;
             color: #76768C;
@@ -181,7 +181,7 @@ h2 {
             font-size: 20px;
             line-height: 28px;
         }
-    #about > .right {
+    .about-me > .right {
         display: inline-block;
         width: 45%;
         float: right;
