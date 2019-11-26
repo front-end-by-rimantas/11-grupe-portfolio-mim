@@ -48,4 +48,5 @@ renderTestimonials( testimonials );
 // contact me
 
 // footer
+window.addEventListener('scroll', backScroll);
 
