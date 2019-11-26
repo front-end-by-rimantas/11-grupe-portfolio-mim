@@ -24,14 +24,11 @@
     
     window.addEventListener('scroll', fixedHeader);
 
-
-// hero
-
-// clients
-
 // about me
-
 document.querySelector('#right-bar').innerHTML = generateProgress(progress);
+
+window.addEventListener('scroll', barScroll);
+barScroll();
 
 // numbers
 

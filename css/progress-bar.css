@@ -40,9 +40,7 @@
                 background-color: #4f4f4f;
                 border-radius: 3px;
                 
-                animation-name: loading;
-                animation-duration: 2s;
-                animation-iteration-count: 1;
+               
                 position: relative;
             }
                 .progress-bar > .full > .bar > .loading::after {
@@ -55,9 +53,7 @@
                     top: -5px;
                     right: 0;  
 
-                    animation-name: loading-circle;
-                    animation-duration: 2s;
-                    animation-iteration-count: 1;
+                   
                 }
                 .progress-bar > .full > .bar > .loading::before {
                     content: '';
@@ -69,6 +65,19 @@
                     top: -10px;
                     right: -5px;  
 
+                    
+                }
+            .progress-bar.animate > .full > .bar > .loading{
+                animation-name: loading;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
+            }   
+                .progress-bar.animate > .full > .bar > .loading::after {
+                    animation-name: loading-circle;
+                    animation-duration: 2s;
+                    animation-iteration-count: 1;
+                }
+                .progress-bar.animate > .full > .bar > .loading::before {
                     animation-name: loading-circle-2;
                     animation-duration: 2s;
                     animation-iteration-count: 1;
@@ -99,13 +108,11 @@
     } 
 }
 
-
-
 @media (max-width: 900px) {
     .content.about > .left,
     .content.about > .right {
         width: 100%;
-        padding: 0;
+        padding: 0 15px;
     }
     .content.about > .left {
         margin-bottom: 50px;
