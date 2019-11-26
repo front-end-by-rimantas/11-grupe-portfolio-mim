@@ -91,29 +91,30 @@ function generateProgress( data ) {
     return HTML;
 }
 
-function barScroll() {
-    const myPosition = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const scrollHeight = myPosition + windowHeight;
-    
-    const DOMbar = document.querySelector('#right-bar');
-    const aboutPosition = DOMbar.offsetTop;
-    const aboutTopMargin = parseFloat(getComputedStyle( DOMbar ).marginTop);
-    const barHeight = DOMbar.querySelector('#right-bar > .progress-bar').offsetHeight;
-    const barPosition = aboutPosition + aboutTopMargin + barHeight;
-    console.log(aboutPosition, barPosition, scrollHeight);
-    if ( barPosition < scrollHeight ) {
-        const progressBars = DOMbar.querySelectorAll('#right-bar > .progress-bar');
-        for ( let i=0; i<progressBars.length; i++ ) {
-            const bar = progressBars[i];
-            if ( !bar.classList.contains('animate') ) {
-                bar.classList.add('animate');
+    // progress baro animacija priskrolinus
+    function barScroll() {
+        const myPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const scrollHeight = myPosition + windowHeight;
+        
+        const DOMbar = document.querySelector('#right-bar');
+        const aboutPosition = DOMbar.offsetTop;
+        const aboutTopMargin = parseFloat(getComputedStyle( DOMbar ).marginTop);
+        const barHeight = DOMbar.querySelector('#right-bar > .progress-bar').offsetHeight;
+        const barPosition = aboutPosition + aboutTopMargin + barHeight;
+
+        if ( barPosition < scrollHeight ) {
+            const progressBars = DOMbar.querySelectorAll('#right-bar > .progress-bar');
+            for ( let i=0; i<progressBars.length; i++ ) {
+                const bar = progressBars[i];
+                if ( !bar.classList.contains('animate') ) {
+                    bar.classList.add('animate');
+                }
             }
         }
+        
+        return;
     }
-    
-    return;
-}
 
 // portfolio
 function renderGallery( list ) {
@@ -302,4 +303,24 @@ function renderTestimonials( list ) {
     }
    
    return;
+}
+
+// footer
+// back to top migtuko klases keitimas
+function backScroll() {
+    const myPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const scrollHeight = myPosition + windowHeight;
+
+    const DOMback = document.querySelector('#about');
+    const backPosition = DOMback.offsetTop;
+
+    if ( scrollHeight > backPosition ) {
+        document.querySelector('#back_top').classList.add('show');
+     }
+    if ( scrollHeight < backPosition ) {
+       document.querySelector('#back_top').classList.remove('show');
+    }
+    
+    return;
 }

@@ -37,6 +37,9 @@
         cursor: pointer;
     }
     .btn.btn-top {
+        display: none;
+    }
+    .btn.btn-top.show {
         display: inline-block;
         font-size: 22px;
         line-height: 35px;
