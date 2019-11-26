@@ -312,7 +312,7 @@ function backScroll() {
     const windowHeight = window.innerHeight;
     const scrollHeight = myPosition + windowHeight;
 
-    const DOMback = document.querySelector('#about');
+    const DOMback = document.querySelector('#about > .about-me');
     const backPosition = DOMback.offsetTop;
 
     if ( scrollHeight > backPosition ) {
