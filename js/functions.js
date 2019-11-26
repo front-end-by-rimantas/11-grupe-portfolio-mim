@@ -15,9 +15,10 @@ function headerScroll() {
         const element = DOMlinks[i];               // susikuriam variable kuriame saugosime kiekviena DOMlinks [i] nari
         const href = element.href;                 // consoleje, prie kiekvieno elemento, randame 'href' ir ji issaugome variable href
         const split = href.split('#');             // splitiname 'href' nuoroda, kad gautume id nuoroda
-        links.push('#'+split[1]);                  // prie link object pridedame # ir split antraji nari (id pavadinima)
+        if ( split.length > 1 ) {
+            links.push('#'+split[1]);               // prie link object pridedame # ir split antraji nari (id pavadinima)
         }
-
+    }
         // susirandame sekciju poziciju aukscius 
         const sectionHeight = [];
         for (let i=0; i<links.length; i++) {        // loop 
@@ -31,8 +32,8 @@ function headerScroll() {
 
         //kuri sekcija man artimiausia
         let currentSectionImIn = 0;                     // starte musu pozicija = 0        
-        for (let i=0; i<sectionHeight.length; i++) {        // jei sectionHeight [i] narys (pvz #portfoliot(2) kurio offsetTop yra 3200) 
-            if (sectionHeight[i] > height) {                // yra didesnis uz mano dabartini auksti (pvz 2400), 
+        for ( let i=0; i<sectionHeight.length; i++) {        // jei sectionHeight [i] narys (pvz #portfoliot(2) kurio offsetTop yra 3200) 
+            if ( sectionHeight[i] > height ) {                // yra didesnis uz mano dabartini auksti (pvz 2400), 
                 break;                                      // tuomet if suveikia ir break; sustabdo loop'a.
             }                                               // reiskia 'currentSectionImIn' verte lieka 1 (#about)
             currentSectionImIn = i;
@@ -74,7 +75,7 @@ function generateProgress( data ) {
    let HTML = '';
    
    data.forEach( bar => {
-       HTML += `<div class="progress-bar animate">
+       HTML += `<div class="progress-bar">
                     <div class="text">
                         <div class="title">${bar.title}</div>
                         <div class="value">${bar.value}%</div>
@@ -95,14 +96,14 @@ function barScroll() {
     const windowHeight = window.innerHeight;
     const scrollHeight = myPosition + windowHeight;
     
-    const DOMbar = document.querySelector('#about');
+    const DOMbar = document.querySelector('#right-bar');
     const aboutPosition = DOMbar.offsetTop;
-    const aboutTopPadding = parseFloat(getComputedStyle( DOMbar ).paddingTop);
-    const barHeight = DOMbar.querySelector('.progress-bar').offsetHeight;
-    const barPosition = aboutPosition + aboutTopPadding + barHeight;
-
+    const aboutTopMargin = parseFloat(getComputedStyle( DOMbar ).marginTop);
+    const barHeight = DOMbar.querySelector('#right-bar > .progress-bar').offsetHeight;
+    const barPosition = aboutPosition + aboutTopMargin + barHeight;
+    console.log(aboutPosition, barPosition, scrollHeight);
     if ( barPosition < scrollHeight ) {
-        const progressBars = DOMbar.querySelectorAll('.progress-bar');
+        const progressBars = DOMbar.querySelectorAll('#right-bar > .progress-bar');
         for ( let i=0; i<progressBars.length; i++ ) {
             const bar = progressBars[i];
             if ( !bar.classList.contains('animate') ) {
