@@ -54,17 +54,23 @@ h2 {
 /* HERO */
 
 /************************************************************/
+.container > .hero {
+    margin: 0px calc(50% - 600px);
+    padding-bottom: 0;
+}
+
 .hero {
     display: inline-block;
     width: 100%;
-    padding: 0 15px;
+    margin-top: 20px;
+    padding: 20px 15px 0;
 }
 
     .hero > .author {
         display: inline-block;
         float: right;
-        margin-right: 15px;
     }
+
     .hero > .left {
         display: inline-block;
         width: 50%;
@@ -89,6 +95,59 @@ h2 {
         margin-bottom: 45px;
         line-height: 28px;
     }
+
+    /* Responsive design  */
+
+    @media (max-width: 1300px) {
+        .container > .hero {
+                margin: 0px calc(50% - 500px);
+            }
+        }
+
+    @media (max-width: 1100px) {
+        .container > .hero > .author {
+            width: 50%;
+        }
+        .container > .hero {
+            margin: 0px calc(50% - 400px);
+            padding: 20px 0 0;
+        }
+        .container > .hero > .left {
+            width: 50%;
+            margin-top: 180px;
+        }
+        .hero > .left h1 {
+            font-size: 36px;
+        }
+    }
+    @media (max-width: 900px) {
+        .container > .hero {
+            margin: 0px calc(50% - 300px);
+        }
+        .hero > .left {
+            padding-right: 20px;
+        }
+        .hero > .left h1 {
+            font-size: 28px;
+        }
+    }
+    @media (max-width: 650px) {
+        .container > .hero {
+            width: 100%;
+            margin: 0;
+            padding: 0 15px;
+            text-align: center;
+        }
+        .container > .hero > .left {
+            width: 100%;
+            margin: 40px 0;
+            padding-right: 0;
+        }
+        .container > .hero > .author {
+            width: 100%;
+        }
+    }
+
     
 /************************************************************/
 /* CLIENTS */
@@ -98,14 +157,14 @@ h2 {
 /************************************************************/
 /* ABOUT ME */
 
-    .about > .left {
+    .about-me > .left {
         display: inline-block;
         width: 50%;
         float: left;
         padding-left: 15px;
     }
 
-        .about > .left > h3{
+        .about-me > .left > h3{
             display: inline-block;
             width: 100%;
             margin-bottom: 25px;
@@ -114,7 +173,7 @@ h2 {
             text-transform: capitalize;
             color: #4F4F4F;
         }
-        .about > .left > p {
+        .about-me > .left > p {
             display: inline-block;
             width: 100%;
             color: #76768C;
@@ -122,7 +181,7 @@ h2 {
             font-size: 20px;
             line-height: 28px;
         }
-    .about > .right {
+    .about-me > .right {
         display: inline-block;
         width: 45%;
         float: right;
@@ -215,25 +274,20 @@ h2 {
 
 
 /************************************************************/
-/* SKILLS */
-
-/************************************************************/
-
-/************************************************************/
-/* LATEST WORK */
-
-/************************************************************/
-
-/************************************************************/
-/* JOB HISTORY */
-
+/* PORTFOLIO */
+#portfolio > .content:nth-of-type(1) {
+    margin-bottom: 0px;
+}
+#portfolio > .content:nth-of-type(2) {
+    margin-top: 0px;
+}
 /************************************************************/
 
 /************************************************************/
 /* SERVICES */
 
-h2::before {
-    height: 3px;
+.serv::before {
+        height: 3px;
 }
 
 /************************************************************/

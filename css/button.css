@@ -8,8 +8,10 @@
     transition: all .3s ease 0s;
 }
     .hero > .left > .btn:hover,
-    .about .left > .btn:hover,
-    .touch form > .btn:hover {
+    .about-me .left > .btn:hover,
+    .touch form > .btn:hover,
+    .footer-content > .btn.btn-top:hover,
+    .btn.btn-top:hover {
     background-color: #000000;
     }
     .hero > .left > .btn {
@@ -19,7 +21,7 @@
         height: 47px;
         padding: 0 50px;
     }
-    .about .left > .btn {
+    .about-me .left > .btn {
         font-weight: 600;
         padding: 0 30px;
         border-radius: 5px;
@@ -32,4 +34,19 @@
         padding: 0 40px;
         line-height: 40px;
         height: 40px;
+        cursor: pointer;
     }
+    .btn.btn-top {
+        display: none;
+    }
+    .btn.btn-top.show {
+        display: inline-block;
+        font-size: 22px;
+        line-height: 35px;
+        text-align: center;
+        padding: 0 10px;
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
+    }
+    

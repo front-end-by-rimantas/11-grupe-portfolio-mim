@@ -2,25 +2,33 @@
 
 // header
 
-const ul = document.querySelector('ul');
-const hamburger = document.querySelector('.fa-bars');
-const close = document.querySelector('.fa-times');
+    // hamburger and exit buttons
+    const ul = document.querySelector('ul');
+    const hamburger = document.querySelector('.fa-bars');
+    const close = document.querySelector('.fa-times');
 
-hamburger.addEventListener('click', ()=>{
-    ul.classList.add('menu-show');
-});
+    hamburger.addEventListener('click', ()=>{
+        ul.classList.add('menu-show');
+    });
 
-close.addEventListener('click', ()=>{
-    ul.classList.remove('menu-show');
-});
+    close.addEventListener('click', ()=>{
+        ul.classList.remove('menu-show');
+    });
 
-// hero
 
-// clients
+
+    // navigation .active class       on scroll event
+
+    window.addEventListener('scroll', headerScroll);
+    headerScroll();
+    
+    window.addEventListener('scroll', fixedHeader);
 
 // about me
-
 document.querySelector('#right-bar').innerHTML = generateProgress(progress);
+
+window.addEventListener('scroll', barScroll);
+barScroll();
 
 // numbers
 
@@ -35,8 +43,10 @@ renderGallery( works );
 renderBlocks( services );
 
 // testimonials
+renderTestimonials( testimonials );
 
 // contact me
 
 // footer
+window.addEventListener('scroll', backScroll);
 
