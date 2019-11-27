@@ -88,16 +88,24 @@
                 display: inline-block;
                 width: 70%;
                 margin: 40px calc((100% - 70%) / 2) 0;
-                position: relative;
                 height: auto;
             }
             .filling > form > .input_here {
                 display: inline-block;
                 width: 100%;
             }
-            .filling > form > .input_here input {
+                .filling > .input_here > .half {
+                    display: inline-block;
+                    width: 100%;
+                    background-color: yellow;
+                    float: left;
+                }
+                    .filling > .input_here > .half:last-of-type {
+                        margin-left: 10%;
+                    }
+            .filling .half > input {
                 display: inline-block;
-                width: calc((100% - 30px) / 2);
+                width: 45%;
                 font-size: 24px;
                 line-height: 26px;
                 padding: 5px 0;
@@ -112,12 +120,6 @@
                     font-size: 18px;
                     line-height: 20px;
                 }
-            .filling > form > .input_here > input:nth-of-type(1) {
-                margin-right: 15px;
-            }
-            .filling > form > .input_here > input:nth-of-type(2) {
-                margin-left: 15px;
-            }
             .filling > form > textarea {
                 display: inline-block;
                 width: 100%;
@@ -141,14 +143,33 @@
                 float: left;
                 border: none;
             }
+            .filling > form span {
+                display: inline-block;
+                border: none;
+                color: red;
+                font-size: 14px;
+                line-height: 28px;
+            }
+            .filling .input_here > span:nth-of-type(1),
+            .filling .input_here > span:nth-of-type(2) {
+                display: inline-block;
+                /* width: 45%; */
+                bottom: -42px;
+                float: left;
+                margin-top: 5px;
+            }
+            .filling .input_here > span:nth-of-type(2) {
+                margin-left: 10%;
+            }
+            .filling > form > span:nth-of-type(1) {
+                width: calc(100% - 5px);
+                margin-top: 5px;
+                margin-left: 5px;
+            }
             .filling > form > span:nth-last-of-type(1) {
-                display: block;
-                position: absolute;
                 width: 100%;
                 bottom: -42px;
-                border: 1px solid yellow;
-                color: red;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 40px;
                 padding: 0 15px;
             }

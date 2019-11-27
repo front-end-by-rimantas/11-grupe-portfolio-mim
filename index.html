@@ -239,10 +239,17 @@
                 <div class="filling">
                     <form name="get-in-touch">
                         <div class="input_here">
-                            <input name ="text" type="text" placeholder="Your Name">
-                            <input name="email" type="email" placeholder="Your Email">
+                            <div class="half">
+                                <input name ="text" type="text" placeholder="Your Name">
+                                <span id="form-text"></span>
+                            </div>
+                            <div class="half">
+                                <input name="email" type="email" placeholder="Your Email">
+                                <span id="form-email"></span>
+                            </div>
                         </div>
-                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <textarea id="textarea" name="message" placeholder="Your Message"></textarea>
+                        <span id="form-textarea"></span>
                         <div type="submit" class="btn" id="btn-click">Send message</div>
                         <span id="form-btn"></span>
                     </form>
