@@ -101,21 +101,31 @@
         }
 } 
 @media (max-width: 450px) {
+    .content-testimonials {
+        width: 300px;
+        margin: 30px calc(50% - 150px);
+    }
+    .content-testimonials > .testimonials {
+        width: 300px;
+        margin: 40px calc( ( 100% - 300px ) / 2 ) 0;
+    }
+}
+@media (max-width: 350px) {
         .content-testimonials {
             width: 200px;
             margin: 30px calc(50% - 100px);
         }
         .content-testimonials > .testimonials {
             width: 200px;
-            margin: 10px calc( ( 100% - 200px ) / 2 ) 0;
+            margin: 20px calc( ( 100% - 200px ) / 2 ) 0;
         }
             .monial > img {
                 position: absolute;
-                width: 50px;
-                height: 50px;
+                width: 80px;
+                height: 80px;
                 position: absolute;
-                top: -8%;
-                left: calc( ( 100% - 50px ) / 2 );
+                top: -18%;
+                left: calc( ( 100% - 80px ) / 2 );
             }
             .monial > .testimonial-text  {
                 margin: 40px 15px 0;
