@@ -80,43 +80,47 @@
         margin-bottom: 0;
         margin-top: 0;
     }
-        .filling {
+        .touch > .filling {
             display: inline-block;
             width: 100%;
         }
-            .filling > form {
+            .touch > .filling > form {
                 display: inline-block;
                 width: 70%;
                 margin: 40px calc((100% - 70%) / 2) 0;
+                height: auto;
             }
-            .filling > form > .input_here {
+            .touch > .filling > form > .input_here {
                 display: inline-block;
                 width: 100%;
             }
-            .filling > form > .input_here input {
+                .touch > .filling > form > .input_here > .input-left,
+                .touch > .filling > form > .input_here > .input-right {
+                    display: inline-block;
+                    width: 45%;
+                    float: left;
+                }
+                    .touch > .filling > form > .input_here > .input-right {
+                        margin-left: 10%;
+                    }
+            #text,
+            #email {
                 display: inline-block;
-                width: calc((100% - 30px) / 2);
-                font-size: 24px;
+                width: 100%;
+                font-size: 18px;
                 line-height: 26px;
                 padding: 5px 0;
-                box-sizing: border-box;
                 border: none;
                 outline: none;
                 border-bottom: 1px solid #BCBCBC;
                 float: left;
                 color: var(--color-text);
             }
-                .filling > form > .input_here input::placeholder {
+                .touch > form > .input_here input::placeholder {
                     font-size: 18px;
                     line-height: 20px;
                 }
-            .filling > form > .input_here > input:nth-of-type(1) {
-                margin-right: 15px;
-            }
-            .filling > form > .input_here > input:nth-of-type(2) {
-                margin-left: 15px;
-            }
-            .filling > form > textarea {
+            .touch > .filling > form > textarea {
                 display: inline-block;
                 width: 100%;
                 height: 148px;
@@ -128,20 +132,39 @@
                 resize: none;
                 color: var(--color-text);
             }
-                .filling > form > textarea::placeholder {
+                .touch > .filling > form > textarea::placeholder {
                     font-size: 18px;
                     line-height: 20px;
                 }
-            .filling > form > .btn {
+            .touch > .filling > form > .btn {
                 display: inline-block;
                 margin: 0;
                 margin-top: 30px;
                 float: left;
                 border: none;
             }
+            .touch > .filling > form span {
+                display: inline-block;
+                border: none;
+                color: red;
+                font-size: 12px;
+                line-height: 24px;
+            }
+            #form-textarea {
+                width: calc(100% - 5px);
+                margin-top: 5px;
+                margin-left: 5px;
+            }
+            #form-btn {
+                width: 100%;
+                bottom: -42px;
+                font-size: 16px;
+                line-height: 32px;
+                padding: 0 15px;
+            }
 
 @media (max-width: 1300px) {
-    .content > .touch > .filling > form {
+    .content > form {
         width: 80%;
         margin: 40px calc((100% - 80%) / 2) 0;
     }
@@ -165,19 +188,20 @@
     .content > .touch {
         width: 100%;
     }
-    .content > .touch > .filling > form > .input_here input {
+    .content > .touch > .filling > form > .input_here > .input-left,
+    .content > .touch > .filling > form > .input_here > .input-right {
         width: 100%;
         margin: 0;
     }
-    .content > .touch > .filling > form > .input_here > input:nth-of-type(2) {
-        margin-top: 20px;
+    .content > .touch > .filling > form > .input_here > .input-right {
+        margin-top: 5px;
     }
-    .filling > form > textarea {
-        margin-top: 40px;
+    .touch > .filling > form > textarea {
+        margin-top: 20px;
     }
 }
 @media (max-width: 650px) {
-    .content > .touch > .filling > form > .btn {
+    #btn-click {
         width: 190px;
         margin: 30px calc((100% - 190px) / 2 ) 0;
     }
