@@ -22,15 +22,16 @@
         .gallery > .filter > .item::after {
             content: "";
             position: absolute;
-            left: 7px;
+            left: 50%;
             top: 18px;
             width: 0;
             border-bottom: 1px solid var(--color-text);
             transform: scaleX(0);
-            transition: transform .3s ease-in;
+            transition: all .3s ease-in;
         }
         .gallery > .filter > .item:hover::after {
             width: calc(100% - 14px);
+            left: 7px;
             transform: scaleX(1);
         }
         .gallery > .filter > .item.active::after {
@@ -50,7 +51,7 @@
         .gallery > .list > .work {
             display: none;
             width: calc((100% - 60px) / 3);
-            height: 450px;
+            max-height: 490px;
             float: left;
             margin: 0 10px 20px;
             overflow: hidden;

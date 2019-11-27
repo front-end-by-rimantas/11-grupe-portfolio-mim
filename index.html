@@ -236,13 +236,14 @@
             </div>
             <div class="touch">
                 <div class="filling">
-                    <form>
+                    <form name="get-in-touch">
                         <div class="input_here">
-                            <input type="text" placeholder="Your Name" required>
-                            <input type="email" placeholder="Your Email" required>
+                            <input name ="text" type="text" placeholder="Your Name">
+                            <input name="email" type="email" placeholder="Your Email">
                         </div>
-                        <textarea placeholder="Your Message" required></textarea>
-                        <input type="submit" value="Send message" class="btn">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <div type="submit" class="btn" id="btn-click">Send message</div>
+                        <span id="form-btn"></span>
                     </form>
                 </div>
             </div>

@@ -10,15 +10,16 @@
     margin: 0 15px;
     box-shadow: 0 1px 2px 2px #E5E5E5;
     background-color: var(--color-primary);
+    transition: all .3s;
 }
     .block:hover {
         box-shadow: 0 3px 20px 2px #E5E5E5;
-        transition: all .3s ease 0s;
+        transition: all .3s;
     }
     .block:hover i {
         background-color: var(--color-title);
         color: #fff;
-        transition: all .3s ease 0s;
+        transition: all .3s;
     }
     .block > i {
         display: inline-block;
@@ -29,6 +30,7 @@
         border: 1px solid var(--color-text);
         border-radius: 50%;
         color: var(--color-text);
+        transition: all .3s;
     }
     .block > h4 {
         display: inline-block;
