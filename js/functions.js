@@ -146,7 +146,7 @@ function renderGallery( list ) {
     for ( let i=0; i<list.length; i++ ) {
         const work = list[i];
 
-        listHTML += `<div class="work show">
+        listHTML += `<div class="work show ${work.size === 2 ? 'size-2' : ''}">
                         <img src="./img/work/${work.photo}">
                         <div class="ant">
                             <a href="#" class="btn-round fa fa-link"></a>
@@ -221,6 +221,11 @@ function updateGallery( event ) {
 }
 
 // services
+/**
+ * 
+ * @param {Array.<Object>} list Sarasas objektu is kuriu generuojam turini
+ * @returns Sugeneruotas turinys kuri galima puslapiuoti
+ */
 function renderBlocks( list ) {
     let HTML = '';
 
@@ -303,6 +308,45 @@ function renderTestimonials( list ) {
     }
    
    return;
+}
+// Get in touch
+document.getElementById('btn-click').addEventListener('click', validateForm);
+function validateForm() {
+    const validateText = document.forms['get-in-touch']['text'].value;
+    const validateEmail = document.forms['get-in-touch']['email'].value;
+    const validateTextarea = document.getElementById('textarea').value;
+
+    if ( validateText === '' ) {
+        document.getElementById("form-text").innerHTML = 'The field is required.';
+    }
+    if ( validateTextarea === '' ) {
+        document.getElementById("form-textarea").innerHTML = 'The field is required.';
+    }
+    
+    let etos = 0;
+    for ( let i=0; i<validateEmail.length; i++ ) {
+        if ( validateEmail[i] === '@' ) {
+            etos++;
+        }
+    }
+    if ( etos !== 1 ||
+        validateEmail[0] === '@' ||
+        validateEmail[validateEmail.length-1] === '@' ||
+        (validateEmail.length > 0 && validateEmail.length < 5) ) {
+            document.getElementById("form-email").innerHTML = 'The e-mail address entered is invalid.';
+        }
+    if ( validateEmail === '' ) {
+        document.getElementById("form-email").innerHTML = 'The field is required.';
+    }
+    if ( validateText === '' ||
+         validateTextarea === '' ||
+         validateEmail === '' ||
+         validateEmail.length < 5 ||
+         etos !== 1 ||
+         validateEmail[0] === '@' ||
+         validateEmail[validateEmail.length-1] === '@') {
+        return document.getElementById("form-btn").innerHTML = 'One or more fields have an error. Please check and try again.';
+    }
 }
 
 // footer

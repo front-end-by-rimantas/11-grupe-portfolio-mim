@@ -22,15 +22,16 @@
         .gallery > .filter > .item::after {
             content: "";
             position: absolute;
-            left: 7px;
+            left: 50%;
             top: 18px;
             width: 0;
             border-bottom: 1px solid var(--color-text);
             transform: scaleX(0);
-            transition: transform .3s ease-in;
+            transition: all .3s ease-in;
         }
         .gallery > .filter > .item:hover::after {
             width: calc(100% - 14px);
+            left: 7px;
             transform: scaleX(1);
         }
         .gallery > .filter > .item.active::after {
@@ -44,18 +45,20 @@
         }
 
     .gallery > .list {
-        display: inline-block;
-        width: calc(100% - 10px);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        grid-auto-flow: dense;
     }
         .gallery > .list > .work {
+            grid-row: span 1 / auto;
             display: none;
-            width: calc((100% - 60px) / 3);
-            height: 450px;
-            float: left;
-            margin: 0 10px 20px;
             overflow: hidden;
             position: relative;
             color: #fff;
+        }
+        .gallery > .list > .work.size-2 {
+            grid-row: span 2 / auto;
         }
         .gallery > .list > .work.show {
             display: inline-block;
@@ -78,11 +81,9 @@
                 text-align: left;
                 text-transform: capitalize;
                 color: var(--color-text);
-                
             }
             .gallery .work:hover > .ant {
                 display: inline-block;
-                
             }
                 .gallery .ant > .btn-round {
                     display: inline-block;
@@ -127,17 +128,17 @@
 
 
 @media (max-width: 900px) {
-    .gallery > .list > .work {
-        width: calc((100% - 40px) / 2);
-        margin: 0 10px 20px;
+    .gallery > .list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 0 15px;
     }
 }
 @media (max-width: 650px) {
-    .gallery > .list > .work {
+    .gallery > .list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
         width: 80%;
-        margin: 0 calc((100% - 80%) / 2) 20px;
-    }
-    .gallery > .list > .work:nth-last-of-type(1) {
-        margin-bottom: 0;
+        margin: 0 calc((100% - 80%) / 2);
     }
 }
