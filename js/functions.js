@@ -146,7 +146,7 @@ function renderGallery( list ) {
     for ( let i=0; i<list.length; i++ ) {
         const work = list[i];
 
-        listHTML += `<div class="work show">
+        listHTML += `<div class="work show ${work.size === 2 ? 'size-2' : ''}">
                         <img src="./img/work/${work.photo}">
                         <div class="ant">
                             <a href="#" class="btn-round fa fa-link"></a>
@@ -221,6 +221,11 @@ function updateGallery( event ) {
 }
 
 // services
+/**
+ * 
+ * @param {Array.<Object>} list Sarasas objektu is kuriu generuojam turini
+ * @returns Sugeneruotas turinys kuri galima puslapiuoti
+ */
 function renderBlocks( list ) {
     let HTML = '';
 

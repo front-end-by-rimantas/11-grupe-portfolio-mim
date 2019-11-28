@@ -34,49 +34,57 @@ const works = [
         name: 'New Portfolio',
         description: 'Garden',
         photo: 'work 1.jpg',
-        tags: ['design', 'new']
+        tags: ['design', 'new'],
+        size: 2
     },
     {
         name: 'Portfolio Three',
         description: 'Garden',
         photo: 'work 2.jpg',
-        tags: ['design', 'print']
-    },
-    {
-        name: 'Mim Contrary To Three',
-        description: 'Poster',
-        photo: 'work 3.jpg',
-        tags: ['print', '3D work']
+        tags: ['design', 'print'],
+        size: 1
     },
     {
         name: 'Portfolio One',
         description: 'Fliyer',
         photo: 'work 4.jpg',
-        tags: ['new', 'print']
+        tags: ['new', 'print'],
+        size: 2
+    },
+    {
+        name: 'Mim Contrary To Three',
+        description: 'Poster',
+        photo: 'work 3.jpg',
+        tags: ['print', '3D work'],
+        size: 1
     },
     {
         name: 'Contrary To Popular Belief',
         description: 'Book Cover',
         photo: 'work 5.jpg',
-        tags: ['print']
-    },
-    {
-        name: 'Contrary To Popular Belief',
-        description: 'WordPress',
-        photo: 'work 6.jpg',
-        tags: ['web']
+        tags: ['print'],
+        size: 1
     },
     {
         name: 'Contrary To Popular Belief',
         description: 'HTML',
         photo: 'work 7.jpg',
-        tags: ['web', 'new', '3D work']
+        tags: ['web', 'new', '3D work'],
+        size: 2
     },
     {
         name: 'Popular Belief Three',
         description: 'Graphics',
         photo: 'work 8.jpg',
-        tags: ['web', 'design', ]
+        tags: ['web', 'design', ],
+        size: 2
+    },
+    {
+        name: 'Contrary To Popular Belief',
+        description: 'WordPress',
+        photo: 'work 6.jpg',
+        tags: ['web'],
+        size: 1
     }
 ];
 
